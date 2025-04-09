@@ -1,0 +1,312 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #2196F3;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 150px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+#question-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 2;
+    min-width: 60%;
+    margin: 0;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;  /* Changed from row to column */
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+.option-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; 
+    padding: 15px 20px;
+    text-align: left;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.option-btn:hover {
+    background-color: #a8d0e9;
+    color: #000000;
+    transform: translateY(-2px);
+}
+
+.option-btn:active {
+    transform: translateY(0);
+}
+
+/* Style for the Submit button */
+.submit-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    width: 80px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+}
+
+/* Style for the arrow Next button */
+.next-btn-arrow {
+    background-color: #007bff; /* Blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-btn:hover,
+.next-btn-arrow:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.media-container{
+    flex: 1;
+    min-width: 35%;
+    position: sticky;
+    top: 20px;
+}
+
+.info {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.info h2 {
+    color: #2196F3;
+    margin-bottom: 1rem;
+}
+
+.info p{
+    text-align: justify;
+}
+
+.info a {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.videos_to_help {
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 150px;
+    position: sticky;
+    top: 20px;
+}
+
+.videos_to_help h3 {
+    color: #2196F3;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.video-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.videos_to_help iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+}
+
+/* Add these styles to your CSS */
+#progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #20b2aa;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+#progress-text {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.result-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navigation-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #20b2aa;
+    background: white;
+    color: #20b2aa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn:hover {
+    background: #20b2aa;
+    color: white;
+    transform: scale(1.1);
+}
+
+.nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-color: #cccccc;
+    color: #cccccc;
+}
+
+.nav-btn:disabled:hover {
+    background: white;
+    transform: none;
+}
+
+.question-count {
+    color: #666;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loading-spinner {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .videos_to_help iframe {
+        width: 100%;
+        height: 250px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #question-card,
+    .info {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    #question-card {
+        padding: 1rem;
+    }
+}
+
+/* Selected Answer Style */
+.option-btn.selected {
+    background-color: #ff6b6b;
+    transform: scale(1.05);
+}
