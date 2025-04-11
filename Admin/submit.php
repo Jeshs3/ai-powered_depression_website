@@ -8,46 +8,53 @@ if (!isset($_SESSION['id'])) {
     exit;
 }
 
-$userId = $_SESSION['id'];  // Get the user ID from session
-$date = $_POST['date'] ?? null;
-$answers = $_POST['answers'] ?? null;  // The answers array
-$totalScore = $_POST['totalScore'] ?? null;
-$status = $_POST['status'] ?? null;  // Should be an integer, like 1 or 0
+$userId = $_SESSION['id'];
 
-// Debugging: Log the incoming values
+// Fetch the POST data
+$answers = $_POST['answers'] ?? null;
+$score = $_POST['score'] ?? null;
+$status = $_POST['status'] ?? "pending-analysis"; // Default to 'pending-analysis' if not provided
+
+// Debug log
 file_put_contents("debug_log.txt", json_encode([
-    'userId' => $userId,
-    'date' => $date,
+    'user_id' => $userId,
     'answers' => $answers,
-    'totalScore' => $totalScore,
+    'score' => $score,
     'status' => $status
-]), FILE_APPEND);
+]) . PHP_EOL, FILE_APPEND);
 
-// Validate data
-if (!$date || !$answers || $totalScore === null || $status === null) {
+// Validate required fields
+if (!$answers || $score === null || $status === null) {
     http_response_code(400);
     echo "Missing data";
     exit;
 }
 
-// Prepare SQL query
+// Convert answers array to JSON if necessary
+if (is_array($answers)) {
+    $answers = json_encode($answers);
+}
+
+// Prepare SQL query (submission_date will be handled automatically)
 $stmt = $dbhandle->prepare("
-    INSERT INTO user_submissions (user_id, submission_date, question_answer, total_score, status)
-    VALUES (?, CURRENT_TIMESTAMP, ?, ?, ?)
+    INSERT INTO user_submissions (user_id, answers, score, status, submission_date)
+    VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP)
 ");
 
 if (!$stmt) {
+    http_response_code(500);
     echo "Prepare failed: " . $dbhandle->error;
     exit;
 }
 
-// Bind the parameters (user_id, submission_date, answers, total_score, status)
-$stmt->bind_param("issi", $userId, $answers, $totalScore, $status);
+// Bind parameters 
+$stmt->bind_param("isis", $userId, $answers, $score, $status);
 
 if ($stmt->execute()) {
-    echo "Submission successful";  // Success message
+    echo "Submission successful";
 } else {
-    echo "Database error: " . $stmt->error;  // Detailed error message
+    http_response_code(500);
+    echo "Database error: " . $stmt->error;
 }
 
 $stmt->close();

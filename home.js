@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   const questionCount = 20;
-
   let responses = [];
 
-    fetch('get_data.php') // adjust path if needed
+  // Fetch the submissions data
+  fetch('/BANOL6/Admin/get_data.php') // adjust path if needed
     .then(res => res.json())
     .then(data => {
         responses = data;
@@ -26,12 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
       headerRow.appendChild(th);
   });
 
+  // Create dynamic headers for each question
   for (let i = 1; i <= questionCount; i++) {
       const th = document.createElement('th');
       th.textContent = `Q${i}`;
       headerRow.appendChild(th);
   }
 
+  // Final headers (Total Score, Status, Action)
   const finalHeaders = ["Total Score", "Status", "Action"];
   finalHeaders.forEach(text => {
       const th = document.createElement('th');
@@ -41,29 +43,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   tableHead.appendChild(headerRow);
 
-
   // Function to render the table with filtered responses
   function renderTable(filteredResponses) {
       tableBody.innerHTML = "";  // Clear existing table rows
       filteredResponses.forEach(res => {
           const tr = document.createElement('tr');
-          tr.innerHTML += `<td>${res.userId}</td>`;
-          tr.innerHTML += `<td>${res.date}</td>`;
+          tr.innerHTML += `<td>${res.userid}</td>`;
+          tr.innerHTML += `<td>${new Date(res.date).toLocaleDateString()}</td>`; // Format date
 
+          // Render each answer (Q1, Q2, ..., Q20)
           res.answers.forEach(ans => {
               tr.innerHTML += `<td>${ans}</td>`;
           });
 
           tr.innerHTML += `<td>${res.total}</td>`;
-          tr.innerHTML += `<td><span class="status ${res.status === 1 ? 'alert' : 'ok'}">
-              ${res.status === 1 ? 'Depressed' : 'Not Depressed'}
-          </span></td>`;
-          tr.innerHTML += `<td><button class="delete-btn" onclick="deleteData('${res.userId}')">Delete</button></td>`;
+          tr.innerHTML += `<td><span class="status pending">Pending Analysis</span></td>`;
+          tr.innerHTML += `<td><button class="delete-btn" onclick="deleteData('${res.userid}')">Delete</button></td>`;
 
           tableBody.appendChild(tr);
       });
   }
-  
 
   // Initial render of the table
   renderTable(responses);
@@ -74,36 +73,39 @@ document.addEventListener("DOMContentLoaded", function () {
       const statusFilter = document.getElementById("statusFilter").value;
 
       const filteredResponses = responses.filter(res => {
-          const matchesUserId = res.userId.toLowerCase().includes(searchInput);
-          const matchesStatus = statusFilter ? res.status.toString() === statusFilter : true;
+          const matchesUserId = res.userid.toLowerCase().includes(searchInput);
+          const matchesStatus = statusFilter ? res.status === statusFilter : true;
 
           return matchesUserId && matchesStatus;
       });
 
       renderTable(filteredResponses);
   }
+
+  // Event listener for filter input changes
+  document.getElementById("searchInput").addEventListener("input", filterTable);
+  document.getElementById("statusFilter").addEventListener("change", filterTable);
 });
 
-//DELETING USER DATA ONLY
+// Deleting user data
 function deleteData(userId) {
-    if (confirm(`Are you sure you want to delete data for ${userId}?`)) {
-      fetch('../Admin/delete_data.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ userId: userId })
-      })
-      .then(res => res.text())
-      .then(response => {
-        alert(response);
-        // Optionally, remove the row from the table or re-fetch data
-        location.reload(); // Simple way to update table
-      })
-      .catch(err => {
-        console.error("Error:", err);
-        alert("Failed to delete submission.");
-      });
+    if (confirm(`Are you sure you want to delete data for user ID ${userId}?`)) {
+        fetch('Admin/delete_data.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ userId: userId })
+        })
+        .then(res => res.text())
+        .then(response => {
+            alert(response);
+            // Optionally, remove the row from the table or re-fetch data
+            location.reload(); // Refresh to show updated table
+        })
+        .catch(err => {
+            console.error("Error:", err);
+            alert("Failed to delete submission.");
+        });
     }
-  }
-
+}

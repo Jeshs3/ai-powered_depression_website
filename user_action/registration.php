@@ -165,8 +165,7 @@
                 </div>
 
                 <a href="login.php">Login account</a>
-                <p id="password_error" style="color: red; display: none;">Passwords do not match!</p>
-
+                
                 <input type="submit" value="Register" onclick="return validatePassword()">
             </form>
         </div>

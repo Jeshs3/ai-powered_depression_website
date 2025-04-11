@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     window.questions = [
         "1. I have trouble sleeping or staying asleep.",
         "2. I feel sad or down without a clear reason.",
@@ -25,90 +25,88 @@ $(document).ready(function() {
     window.currentQuestion = 0;
     window.scores = [];
     window.totalQuestions = questions.length;
-    
-    // Add progress bar update function
+
     function updateProgress() {
-        const progressPercentage = (currentQuestion / totalQuestions) * 100;
-        $("#progress-bar").css("width", progressPercentage + "%");
-        $("#progress-text").text(Math.round(progressPercentage) + "% Complete");
+        const percent = (currentQuestion / totalQuestions) * 100;
+        $("#progress-bar").css("width", percent + "%");
+        $("#progress-text").text(Math.round(percent) + "% Complete");
     }
 
-    window.loadQuestion = function() {
+    function updateNextButtonState() {
+        const answered = scores[currentQuestion] !== undefined;
+        $("#next-btn").prop("disabled", !answered);
+    }
+
+    window.loadQuestion = function () {
         updateProgress();
-    
+
         $("#current-q").text(currentQuestion + 1);
-    
-        // Disable/enable navigation buttons
         $("#prev-btn").prop("disabled", currentQuestion === 0);
-    
-        if (currentQuestion === totalQuestions - 1) {
-            $("#next-btn").text("Submit").removeClass("next-btn-arrow").addClass("submit-btn"); // Change the button text and add a new class
-        } else {
-            $("#next-btn").html('<i class="fas fa-chevron-right"></i>').removeClass("submit-btn").addClass("next-btn-arrow"); // Reset to the arrow button
-        }        
-    
-        if (currentQuestion < totalQuestions) {
-            $("#question-text").text(questions[currentQuestion]);
-    
-            // Remove 'selected' class from all buttons
-            $(".option-btn").removeClass("selected");
-    
-            // Highlight the existing answer if any
-            if (scores[currentQuestion] !== undefined) {
-                // Mark the selected button
-                $(`.option-btn[data-score="${scores[currentQuestion]}"]`).addClass("selected");
-                $("#next-btn").prop("disabled", false); // Enable the next button if answered
-            } else {
-                $("#next-btn").prop("disabled", true); // Disable the next button if unanswered
-            }
+
+        const isLast = currentQuestion === totalQuestions - 1;
+
+        $("#next-btn")
+            .text(isLast ? "Submit" : "")
+            .toggleClass("submit-btn", isLast)
+            .toggleClass("next-btn-arrow", !isLast);
+
+        if (!isLast) {
+            $("#next-btn").html('<i class="fas fa-chevron-right"></i>');
         }
+
+        $("#question-text").text(questions[currentQuestion]);
+        $(".option-btn").removeClass("selected");
+
+        const selectedScore = scores[currentQuestion];
+        if (selectedScore !== undefined) {
+            $(`.option-btn[data-score="${selectedScore}"]`).addClass("selected");
+        }
+
+        updateNextButtonState();
     };
-    
 
-    function validatePassword() {
-        var password = document.getElementById("password").value;
-        var confirmPassword = document.getElementById("confirm_password").value;
-        var errorText = document.getElementById("password_error");
-
-        if (password !== confirmPassword) {
-            errorText.style.display = "block";
-            return false; // Prevent form submission
-        } else {
-            errorText.style.display = "none";
-            return true; // Allow form submission
+    $("#prev-btn").click(function () {
+        if (currentQuestion > 0) {
+            currentQuestion--;
+            loadQuestion();
         }
-    }
-
-    // Add navigation handlers
-    $("#prev-btn").click(() => {
-    if (currentQuestion > 0) {
-        currentQuestion--;
-        loadQuestion();
-    }
     });
 
-    $("#next-btn").off("click").on("click", function (e)  {
+    $("#next-btn").off("click").on("click", function (e) {
         e.stopPropagation();
 
         if ($(this).hasClass("submit-btn")) {
-            return; 
+            window.submitAnswers();
+            return;
         }
 
-        // Proceed to next question if answered
         if (currentQuestion < totalQuestions - 1) {
             currentQuestion++;
             loadQuestion();
         }
     });
+
+    $(".option-btn").on("click", function () {
+        const score = parseInt($(this).data("score"));
+        scores[currentQuestion] = score;
     
-
-    $(".option-btn").on("click", function() {
-        let score = parseInt($(this).data("score"));
-        scores[currentQuestion] = score; // Store score at current index
         $(this).addClass("selected").siblings().removeClass("selected");
-
-        $("#next-btn").prop("disabled", false);
-    });
-
+        updateNextButtonState();
+    
+        // Instantly go to next question unless it's the last one
+        if (currentQuestion < totalQuestions - 1) {
+            currentQuestion++;
+            loadQuestion();
+        } else {
+            // If it's the last question, change next button to "Submit"
+            $("#next-btn")
+                .text("Submit")
+                .removeClass("next-btn-arrow")
+                .addClass("submit-btn");
+            // Optionally auto-submit here if you want:
+            // submitAnswers();
+        }
+    });    
+    
     loadQuestion();
 });

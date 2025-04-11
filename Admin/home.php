@@ -1,3 +1,5 @@
+<?php include 'admin_header.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +8,6 @@
   <link rel="stylesheet" href="../CSS/home.css">
 </head>
 <body>
-
-<header class="topnav">
-    <h1>Admin Dashboard</h1>
-    <nav>
-      <ul>
-        <li><a href="#">🏠 Home</a></li>
-        <li><a href="view_user.php">📁 File</a></li>
-        <li><a href="#">✂️ Delete Record</a></li>
-        <li><a href="#">⚙️ Settings</a></li>
-        <li><a href="#">🚪 Logout</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <div class="dashboard-container">
 

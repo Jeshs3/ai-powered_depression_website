@@ -1,6 +1,7 @@
 <?php
     include "connection.php"; 
     include "delete_user.php";
+    include "admin_header.php";
 
     $sql = "SELECT id, first_name, middle_name, last_name, dob, email, gender, year, course FROM users";
     $result = $dbhandle->query($sql);

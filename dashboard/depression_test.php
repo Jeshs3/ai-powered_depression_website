@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Depression Self-Assessment Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="../CSS/d_styles.css">
 </head>
@@ -50,6 +51,7 @@
                 <button class="nav-btn" id="next-btn">
                     <i class="fas fa-chevron-right"></i>
                 </button>
+
             </div>
         </div>
 

@@ -1,1 +1,13 @@
-{"userId":15,"date":"2025-04-09","answers":"0 -  - 4 -  - 3 -  - 3 -  - 2 -  - 1 -  - 4 -  - 2 -  - 3 -  - 2 - 3","totalScore":"27","status":"1"}{"userId":15,"date":"2025-04-09","answers":"2 - 3 - 4 - 3 - 2 - 2 - 4 - 3 - 3 - 2 - 3 - 3 - 2 - 3 - 4 - 3 - 3 - 2 - 4 - 1","totalScore":"56","status":"1"}{"userId":15,"date":"2025-04-09","answers":"2 - 3 - 4 - 3 - 2 - 2 - 4 - 3 - 3 - 2 - 3 - 3 - 2 - 3 - 4 - 3 - 3 - 2 - 4 - 1","totalScore":"56","status":"1"}{"userId":15,"date":"2025-04-09","answers":"2 - 3 - 4 - 3 - 2 - 2 - 4 - 3 - 3 - 2 - 3 - 3 - 2 - 3 - 4 - 3 - 3 - 2 - 4 - 1","totalScore":"56","status":"1"}{"userId":15,"date":null,"answers":null,"totalScore":null,"status":null}{"userId":15,"date":null,"answers":null,"totalScore":null,"status":null}{"userId":15,"date":null,"answers":null,"totalScore":null,"status":null}
+{"userId":15,"date":"2025-04-09","answers":"0 -  - 4 -  - 3 -  - 3 -  - 2 -  - 1 -  - 4 -  - 2 -  - 3 -  - 2 - 3","totalScore":"27","status":"1"}{"userId":15,"date":"2025-04-09","answers":"2 - 3 - 4 - 3 - 2 - 2 - 4 - 3 - 3 - 2 - 3 - 3 - 2 - 3 - 4 - 3 - 3 - 2 - 4 - 1","totalScore":"56","status":"1"}{"userId":15,"date":"2025-04-09","answers":"2 - 3 - 4 - 3 - 2 - 2 - 4 - 3 - 3 - 2 - 3 - 3 - 2 - 3 - 4 - 3 - 3 - 2 - 4 - 1","totalScore":"56","status":"1"}{"userId":15,"date":"2025-04-09","answers":"2 - 3 - 4 - 3 - 2 - 2 - 4 - 3 - 3 - 2 - 3 - 3 - 2 - 3 - 4 - 3 - 3 - 2 - 4 - 1","totalScore":"56","status":"1"}{"userId":15,"date":null,"answers":null,"totalScore":null,"status":null}{"userId":15,"date":null,"answers":null,"totalScore":null,"status":null}{"userId":15,"date":null,"answers":null,"totalScore":null,"status":null}{"userId":15,"date":null,"answers":null,"totalScore":null,"status":null}{"userId":15,"date":null,"answers":null,"totalScore":null,"status":null}{"user_id":27,"answers":null,"totalScore":null,"status":null}
+{"user_id":27,"answers":null,"totalScore":null,"status":null}
+{"user_id":27,"answers":null,"totalScore":null,"status":null}
+{"user_id":27,"answers":null,"totalScore":null,"status":null}
+{"user_id":27,"answers":null,"totalScore":null,"status":null}
+{"user_id":27,"answers":null,"totalScore":null,"status":null}
+{"user_id":27,"answers":null,"score":null,"status":null}
+{"user_id":27,"answers":null,"score":null,"status":null}
+{"user_id":27,"answers":null,"score":null,"status":"pending-analysis"}
+{"user_id":27,"answers":null,"score":null,"status":"pending-analysis"}
+{"user_id":null,"answers":null,"score":null,"status":"pending-analysis"}
+{"user_id":27,"answers":null,"score":null,"status":"pending-analysis"}
+{"user_id":27,"answers":"0 - 1 - 0 - 2 - 3 - 2 - 2 - 0 - 1 - 0 - 1 - 2 - 3 - 2 - 1 - 2 - 2 - 3 - 1 - 0","score":"28","status":"pending-analysis"}
