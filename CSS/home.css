@@ -114,6 +114,19 @@ th {
   border-radius: 4px;
 }
 
+.view-btn {
+  background-color: #38bef3;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.view-btn{
+  background-color: #007bff;
+}
+
 .delete-btn:hover {
   background-color: #c0392b;
 }

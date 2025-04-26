@@ -26,8 +26,7 @@
             <th>Gender</th>
             <th>Year</th>
             <th>Course</th>
-            <th></th>
-            <th></th>
+            <th colspan="2">Action</th>
         </tr>
 
         <?php

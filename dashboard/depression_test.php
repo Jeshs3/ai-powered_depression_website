@@ -11,13 +11,36 @@
 <body>
     
     <header>
-        <h1>Depression Self-Assessment Test</h1>
-        <h4>Are you feeling alright?</h4>
-        <form method="post" action="../user_action/logout.php">
-            <button type="submit" class="nav-btn" title="Logout">
-                <i class="fas fa-sign-out-alt"></i>
+    <div class="header-content">
+        <div class="header-text">
+            <h1>Depression Self-Assessment Test</h1>
+            <h4>Are you feeling alright?</h4>
+        </div>
+        
+        <div class="header-controls">
+            <!-- Admin Switch Button -->
+            <button class="admin-switch" id="adminSwitch" title="Switch to Admin View">
+                <i class="fas fa-user-shield"></i>
             </button>
-        </form>
+            
+            <!-- Profile Dropdown Trigger -->
+            <div class="profile-dropdown">
+                <button class="profile-btn" onclick="toggleDropdown()">
+                    <i class="fas fa-user-circle"></i>
+                </button>
+                
+                <div class="floating-logout">
+                    <button class="peek-logout" onclick="toggleLogout()">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                    <form method="post" action="../user_action/logout.php" class="logout-form">
+                        <button type="submit">Logout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        
     </header>
 
     <div class="container">
@@ -35,13 +58,7 @@
             <div id="progress-text">0% Complete</div>
             
             <h2 id="question-text"></h2>
-            <div id="options">
-                <button class="option-btn" data-score="0">Never (0)</button>
-                <button class="option-btn" data-score="1">Rarely (1)</button>
-                <button class="option-btn" data-score="2">Sometimes (2)</button>
-                <button class="option-btn" data-score="3">Often (3)</button>
-                <button class="option-btn" data-score="4">Always (4)</button>
-            </div>
+            <div id="options"></div>
 
             <div class="navigation-controls">
                 <button class="nav-btn" id="prev-btn">
@@ -49,7 +66,7 @@
                 </button>
                 <span class="question-count">Question <span id="current-q">1</span>/20</span>
                 <button class="nav-btn" id="next-btn">
-                    <i class="fas fa-chevron-right"></i>
+                    Continue
                 </button>
 
             </div>
@@ -77,7 +94,8 @@
             </div>
         </div>
     </div>
-    <script src="../test.js"></script>
-    <script src="../answer.js"></script>
+    <script src="../script/header.js"></script>
+    <script src="../script/test.js"></script>
+    <script src="../script/answer.js"></script>
 </body>
 </html>

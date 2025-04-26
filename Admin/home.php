@@ -32,6 +32,6 @@
       </table>
     </div>
   </div>
-  <script src="../home.js"></script>
+  <script src="../script/home.js"></script>
 </body>
 </html>

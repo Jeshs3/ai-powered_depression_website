@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Final headers (Total Score, Status, Action)
-  const finalHeaders = ["Total Score", "Status", "Action"];
+  const finalHeaders = ["Total Score", "Status", "Action", "View Profile"];
   finalHeaders.forEach(text => {
       const th = document.createElement('th');
       th.textContent = text;
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
           tr.innerHTML += `<td>${res.total}</td>`;
           tr.innerHTML += `<td><span class="status pending">Pending Analysis</span></td>`;
           tr.innerHTML += `<td><button class="delete-btn" onclick="deleteData('${res.userid}')">Delete</button></td>`;
-
+          tr.innerHTML += `<td><button class="view-btn" onclick="window.location.href='profile.php?id=${res.userid}'">View Profile</button></td>`;
           tableBody.appendChild(tr);
       });
   }

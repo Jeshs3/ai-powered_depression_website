@@ -1,0 +1,203 @@
+[
+    {
+        "text": "1. I have trouble sleeping or staying asleep.",
+        "emotions": [
+            { "label": "😴 Restless", "value": "restless" },
+            { "label": "😐 Light Sleeper", "value": "light_sleeper" },
+            { "label": "😌 Occasionally Rested", "value": "sometimes_rested" },
+            { "label": "😴 Usually Rested", "value": "usually_rested" },
+            { "label": "💤 Deeply Rested", "value": "deeply_rested" }
+        ]
+    },
+    {
+        "text": "2. I feel sad or down without a clear reason.",
+        "emotions": [
+            { "label": "😢 Often Sad", "value": "often_sad" },
+            { "label": "😔 Low Mood Sometimes", "value": "low_mood" },
+            { "label": "😐 Neutral", "value": "neutral" },
+            { "label": "🙂 Generally Fine ", "value": "generally_fine" },
+            { "label": "😄 Emotionally Uplifted", "value": "uplifted" }
+        ]
+    },
+    {
+        "text": "3. I struggle to concentrate on daily tasks.",
+        "emotions": [
+            { "label": "🤯 Mentally Scattered", "value": "mentally_scattered" },
+            { "label": "😵‍💫 Distracted Often", "value": "distracted_often" },
+            { "label": "😐 Occasionally Distracted", "value": "occasionally_distracted" },
+            { "label": "🧠 Focused", "value": "focused" },
+            { "label": "🔍 Laser Focused", "value": "laser_focused" }
+        ]
+    },
+    {
+        "text": "4. I have lost interest in activities I used to enjoy.",
+        "emotions": [
+            { "label": "🕳️ Emotionally Numb", "value": "emotionally_numb" },
+            { "label": "😞 Disinterested", "value": "disinterested" },
+            { "label": "😐 Neutral", "value": "neutral" },
+            { "label": "😊 Mildly Engaged", "value": "mildly_engaged" },
+            { "label": "❤️ Excited About Life", "value": "excited_about_life" }
+        ]
+    },
+    {
+        "text": "5. I feel physically exhausted even when I get enough rest.",
+        "emotions": [
+            { "label": "🪫 Drained", "value": "drained" },
+            { "label": "😓 Tired", "value": "tired" },
+            { "label": "😐 Sometimes Weary", "value": "sometimes_weary" },
+            { "label": "💪 Energetic", "value": "energetic" },
+            { "label": "⚡ Fully Energized", "value": "fully_energized" }
+        ]
+    },
+    {
+        "text": "6. I avoid social interactions or prefer to be alone.",
+        "emotions": [
+            { "label": "🚪Withdrawn", "value": "withdrawn" },
+            { "label": "😶 Prefer Isolation", "value": "prefer_isolation" },
+            { "label": "😐 Neutral", "value": "neutral" },
+            { "label": "🤝 Open to Others", "value": "open_to_others" },
+            { "label": "🥳 Socially Engaged", "value": "socially_engaged" }
+        ]
+    },
+    {
+        "text": "7. I feel hopeless about the future.",
+        "emotions": [
+            { "label": "🌧️ Hopeless", "value": "hopeless" },
+            { "label": "😟 Pessimistic", "value": "pessimistic" },
+            { "label": "😐 Indifferent", "value": "indifferent" },
+            { "label": "🌤️ Cautiously Hopeful", "value": "cautiously_hopeful" },
+            { "label": "🌞 Optimistic", "value": "optimistic" }
+        ]
+    },
+    {
+        "text": "8. I experience sudden mood swings or irritability.",
+        "emotions": [
+            { "label": "🌪️ Volatile", "value": "volatile" },
+            { "label": "😤 Irritable", "value": "irritable" },
+            { "label": "😐 Occasionally Moody", "value": "occasionally_moody" },
+            { "label": "🙂 Emotionally Balanced", "value": "emotionally_balanced" },
+            { "label": "🌈 Calm and Consistent", "value": "calm_and_consistent" }
+        ]
+    },
+    {
+        "text": "9. I have a decreased or increased appetite.",
+        "emotions": [
+            { "label": "🥄 No Appetite", "value": "no_appetite" },
+            { "label": "😐 Normal Appetite", "value": "normal_appetite" },
+            { "label": "🍔 Overeating", "value": "overeating" },
+            { "label": "📉 Losing Weight", "value": "losing_weight" },
+            { "label": "📈 Gaining Weight", "value": "gaining_weight" }
+        ]
+    },
+    {
+        "text": "10. I have negative thoughts about myself.",
+        "emotions": [
+            { "label": "💔 Worthless", "value": "worthless" },
+            { "label": "😞 Self-Critical", "value": "self_critical" },
+            { "label": "😐 Indifferent", "value": "indifferent" },
+            { "label": "😊 Accepting", "value": "accepting" },
+            { "label": "💖 Self-Compassionate", "value": "self_compassionate" }
+        ]
+    },
+    {
+        "text": "11. I experience frequent headaches or body pain.",
+        "emotions": [
+            { "label": "😣 Pain Often", "value": "pain_often" },
+            { "label": "😕 Occasional Discomfort", "value": "occasional_discomfort" },
+            { "label": "😐 Neutral", "value": "neutral" },
+            { "label": "🙂 Mostly Comfortable", "value": "mostly_comfortable" },
+            { "label": "💪 Physically Well", "value": "physically_well" }
+        ]
+    },
+    {
+        "text": "12. I feel guilty or blame myself.",
+        "emotions": [
+            { "label": "😓 Guilt-Ridden", "value": "guilt_ridden" },
+            { "label": "🙁 Self-Blaming", "value": "self_blaming" },
+            { "label": "😐 Accepting Sometimes", "value": "accepting_sometimes" },
+            { "label": "😌 Self-Forgiving", "value": "self_forgiving" },
+            { "label": "✨ Empowered", "value": "empowered" }
+        ]
+    },
+    {
+        "text": "13. I have difficulty making decisions.",
+        "emotions": [
+            { "label": "🤯 Overwhelmed", "value": "overwhelmed" },
+            { "label": "😬 Uncertain", "value": "uncertain" },
+            { "label": "😐 Occasionally Hesitant", "value": "occasionally_hesitant" },
+            { "label": "🧘 Calm Decision-Maker", "value": "calm_decision_maker" },
+            { "label": "🧠 Confident Decider", "value": "confident_decider" }
+        ]
+    },
+    {
+        "text": "14. I feel anxious or restless.",
+        "emotions": [
+            { "label": "😰 Constantly Anxious", "value": "constantly_anxious" },
+            { "label": "😟 Often Restless", "value": "often_restless" },
+            { "label": "😐 Sometimes On Edge", "value": "sometimes_on_edge" },
+            { "label": "🙂 Mostly Calm", "value": "mostly_calm" },
+            { "label": "🧘 Totally At Ease", "value": "totally_at_ease" }
+        ]
+    },
+    {
+        "text": "15. I find it hard to experience joy.",
+        "emotions": [
+            { "label": "😶 Emotionally Flat", "value": "emotionally_flat" },
+            { "label": "😞 Joyless", "value": "joyless" },
+            { "label": "😐 Neutral", "value": "neutral" },
+            { "label": "😊 Occasionally Happy", "value": "occasionally_happy" },
+            { "label": "🎉 Frequently Joyful", "value": "frequently_joyful" }
+        ]
+    },
+    {
+        "text": "16. I feel detached or numb.",
+        "emotions": [
+            { "label": "🫥 Emotionally Numb", "value": "emotionally_numb" },
+            { "label": "🪞 Detached", "value": "detached" },
+            { "label": "😐 Indifferent", "value": "indifferent" },
+            { "label": "🙂 Connected", "value": "connected" },
+            { "label": "❤️ Deeply Engaged", "value": "deeply_engaged" }
+        ]
+    },
+    {
+        "text": "17. My \"emotions\" are unpredictable or uncontrollable.",
+        "emotions": [
+            { "label": "🌪️ Out of Control", "value": "out_of_control" },
+            { "label": "😤 Unpredictable", "value": "unpredictable" },
+            { "label": "😐 Occasionally Intense", "value": "occasionally_intense" },
+            { "label": "🙂 Emotionally Stable", "value": "emotionally_stable" },
+            { "label": "🌈 Peacefully Balanced", "value": "peacefully_balanced" }
+        ]
+    },
+    {
+        "text": "18. I have trouble remembering things or focusing.",
+        "emotions": [
+            { "label": "🧠 Foggy", "value": "foggy" },
+            { "label": "😕 Forgetful", "value": "forgetful" },
+            { "label": "😐 Distracted Sometimes", "value": "distracted_sometimes" },
+            { "label": "🔍 Attentive", "value": "attentive" },
+            { "label": "🧠 Mentally Sharp", "value": "mentally_sharp" }
+        ]
+    },
+    {
+        "text": "19. I feel like I am a burden.",
+        "emotions": [
+            { "label": "😔 Burdensome", "value": "burdensome" },
+            { "label": "😞 Insecure", "value": "insecure" },
+            { "label": "😐 Unsure", "value": "unsure" },
+            { "label": "😊 Appreciated Sometimes", "value": "appreciated_sometimes" },
+            { "label": "💖 Valued and Loved", "value": "valued_and_loved" }
+        ]
+    },
+    {
+        "text": "20. I’ve had thoughts of self-harm or life being meaningless.",
+        "emotions": [
+            { "label": "💔 Deep Despair", "value": "deep_despair" },
+            { "label": "😞 Hopeless Thoughts", "value": "hopeless_thoughts" },
+            { "label": "😐 Sometimes Numb", "value": "sometimes_numb" },
+            { "label": "🙏 Seeking Meaning", "value": "seeking_meaning" },
+            { "label": "🌟 Holding Hope", "value": "holding_hope" }
+        ]
+    }       
+]
+
