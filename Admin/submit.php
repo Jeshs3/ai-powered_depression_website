@@ -13,14 +13,16 @@ $userId = $_SESSION['id'];
 // Fetch the POST data
 $answers = $_POST['answers'] ?? null;
 $score = $_POST['score'] ?? null;
-$status = $_POST['status'] ?? "pending-analysis"; // Default to 'pending-analysis' if not provided
+$status = $_POST['status'] ?? "pending-analysis"; 
+$probability = $_POST['probability'] ?? null;
 
 // Debug log
 file_put_contents("debug_log.txt", json_encode([
     'user_id' => $userId,
     'answers' => $answers,
     'score' => $score,
-    'status' => $status
+    'status' => $status,
+    'probability' => $probability,
 ]) . PHP_EOL, FILE_APPEND);
 
 // Validate required fields
@@ -32,13 +34,16 @@ if (!$answers || $score === null || $status === null) {
 
 // Convert answers array to JSON if necessary
 if (is_array($answers)) {
+    $answers = array_map(function($item) {
+        return is_array($item) && isset($item['value']) ? $item['value'] : $item;
+    }, $answers);
     $answers = json_encode($answers);
 }
 
 // Prepare SQL query (submission_date will be handled automatically)
 $stmt = $dbhandle->prepare("
-    INSERT INTO user_submissions (user_id, answers, score, status, submission_date)
-    VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP)
+    INSERT INTO user_submissions (user_id, answers, score, status, probability, submission_date)
+    VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
 ");
 
 if (!$stmt) {
@@ -48,7 +53,7 @@ if (!$stmt) {
 }
 
 // Bind parameters 
-$stmt->bind_param("isis", $userId, $answers, $score, $status);
+$stmt->bind_param("isiss", $userId, $answers, $score, $status, $probability);
 
 if ($stmt->execute()) {
     echo "Submission successful";

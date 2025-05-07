@@ -1,0 +1,574 @@
+Starting prediction...
+Received answers: Array
+(
+    [0] => 0
+    [1] => 1
+    [2] => 1
+    [3] => 1
+    [4] => 4
+    [5] => 2
+    [6] => 0
+    [7] => 1
+    [8] => 2
+    [9] => 3
+    [10] => 0
+    [11] => 2
+    [12] => 1
+    [13] => 3
+    [14] => 4
+    [15] => 1
+    [16] => 2
+    [17] => 3
+    [18] => 0
+    [19] => 4
+)
+
+Running command: python3 model_runner.py ^"0,1,1,1,4,2,0,1,2,3,0,2,1,3,4,1,2,3,0,4^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => 0
+    [1] => 1
+    [2] => 1
+    [3] => 1
+    [4] => 4
+    [5] => 2
+    [6] => 0
+    [7] => 1
+    [8] => 2
+    [9] => 3
+    [10] => 0
+    [11] => 2
+    [12] => 1
+    [13] => 3
+    [14] => 4
+    [15] => 1
+    [16] => 2
+    [17] => 3
+    [18] => 0
+    [19] => 4
+)
+
+Running command: python3 model_runner.py ^"0,1,1,1,4,2,0,1,2,3,0,2,1,3,4,1,2,3,0,4^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => 2
+    [1] => 1
+    [2] => 2
+    [3] => 0
+    [4] => 3
+    [5] => 2
+    [6] => 2
+    [7] => 0
+    [8] => 3
+    [9] => 2
+    [10] => 1
+    [11] => 4
+    [12] => 2
+    [13] => 3
+    [14] => 1
+    [15] => 1
+    [16] => 2
+    [17] => 2
+    [18] => 4
+    [19] => 1
+)
+
+Running command: python3 model.py ^"2,1,2,0,3,2,2,0,3,2,1,4,2,3,1,1,2,2,4,1^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => 2
+    [1] => 1
+    [2] => 0
+    [3] => 2
+    [4] => 1
+    [5] => 3
+    [6] => 3
+    [7] => 1
+    [8] => 0
+    [9] => 2
+    [10] => 3
+    [11] => 4
+    [12] => 2
+    [13] => 1
+    [14] => 0
+    [15] => 2
+    [16] => 2
+    [17] => 3
+    [18] => 2
+    [19] => 0
+)
+
+Running command: python3 model.py ^"2,1,0,2,1,3,3,1,0,2,3,4,2,1,0,2,2,3,2,0^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => 2
+    [1] => 3
+    [2] => 2
+    [3] => 1
+    [4] => 0
+    [5] => 1
+    [6] => 3
+    [7] => 1
+    [8] => 2
+    [9] => 0
+    [10] => 3
+    [11] => 3
+    [12] => 2
+    [13] => 1
+    [14] => 2
+    [15] => 4
+    [16] => 3
+    [17] => 2
+    [18] => 2
+    [19] => 1
+)
+
+Running command: python3 model.py ^"2,3,2,1,0,1,3,1,2,0,3,3,2,1,2,4,3,2,2,1^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => 1
+    [1] => 2
+    [2] => 1
+    [3] => 0
+    [4] => 1
+    [5] => 1
+    [6] => 3
+    [7] => 0
+    [8] => 1
+    [9] => 2
+    [10] => 2
+    [11] => 4
+    [12] => 3
+    [13] => 2
+    [14] => 1
+    [15] => 0
+    [16] => 2
+    [17] => 3
+    [18] => 4
+    [19] => 0
+)
+
+Running command: python3 model.py ^"1,2,1,0,1,1,3,0,1,2,2,4,3,2,1,0,2,3,4,0^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => 2
+    [1] => 1
+    [2] => 1
+    [3] => 0
+    [4] => 1
+    [5] => 2
+    [6] => 3
+    [7] => 1
+    [8] => 0
+    [9] => 1
+    [10] => 2
+    [11] => 3
+    [12] => 1
+    [13] => 2
+    [14] => 3
+    [15] => 1
+    [16] => 0
+    [17] => 1
+    [18] => 3
+    [19] => 0
+)
+
+Running command: python3 model.py ^"2,1,1,0,1,2,3,1,0,1,2,3,1,2,3,1,0,1,3,0^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => 1
+    [1] => 1
+    [2] => 0
+    [3] => 2
+    [4] => 0
+    [5] => 1
+    [6] => 2
+    [7] => 0
+    [8] => 1
+    [9] => 2
+    [10] => 0
+    [11] => 1
+    [12] => 2
+    [13] => 3
+    [14] => 0
+    [15] => 2
+    [16] => 1
+    [17] => 2
+    [18] => 2
+    [19] => 0
+)
+
+Running command: python3 model.py ^"1,1,0,2,0,1,2,0,1,2,0,1,2,3,0,2,1,2,2,0^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => 1
+    [1] => 1
+    [2] => 0
+    [3] => 2
+    [4] => 0
+    [5] => 1
+    [6] => 2
+    [7] => 0
+    [8] => 1
+    [9] => 2
+    [10] => 0
+    [11] => 1
+    [12] => 2
+    [13] => 3
+    [14] => 0
+    [15] => 2
+    [16] => 1
+    [17] => 2
+    [18] => 2
+    [19] => 0
+)
+
+Running command: python3 model.py ^"1,1,0,2,0,1,2,0,1,2,0,1,2,3,0,2,1,2,2,0^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => 1
+    [1] => 1
+    [2] => 0
+    [3] => 2
+    [4] => 0
+    [5] => 1
+    [6] => 2
+    [7] => 0
+    [8] => 1
+    [9] => 2
+    [10] => 0
+    [11] => 1
+    [12] => 2
+    [13] => 3
+    [14] => 0
+    [15] => 2
+    [16] => 1
+    [17] => 2
+    [18] => 2
+    [19] => 0
+)
+
+Running command: python3 model.py ^"1,1,0,2,0,1,2,0,1,2,0,1,2,3,0,2,1,2,2,0^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => 1
+    [1] => 1
+    [2] => 0
+    [3] => 2
+    [4] => 0
+    [5] => 1
+    [6] => 2
+    [7] => 0
+    [8] => 1
+    [9] => 2
+    [10] => 0
+    [11] => 1
+    [12] => 2
+    [13] => 3
+    [14] => 0
+    [15] => 2
+    [16] => 1
+    [17] => 2
+    [18] => 2
+    [19] => 0
+)
+
+Running command: python3 model.py ^"1,1,0,2,0,1,2,0,1,2,0,1,2,3,0,2,1,2,2,0^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => sometimes_rested
+    [1] => neutral
+    [2] => mentally_scattered
+    [3] => emotionally_numb
+    [4] => drained
+    [5] => prefer_isolation
+    [6] => hopeless
+    [7] => volatile
+    [8] => normal_appetite
+    [9] => worthless
+    [10] => pain_often
+    [11] => guilt_ridden
+    [12] => overwhelmed
+    [13] => often_restless
+    [14] => emotionally_flat
+    [15] => indifferent
+    [16] => out_of_control
+    [17] => distracted_sometimes
+    [18] => insecure
+    [19] => deep_despair
+)
+
+Running command: C:^\Users^\haiti^\AppData^\Local^\Programs^\Python^\Python313^\python.exe C:^\xampp^\htdocs^\banol6^\backend^\model.py^"sometimes_rested,neutral,mentally_scattered,emotionally_numb,drained,prefer_isolation,hopeless,volatile,normal_appetite,worthless,pain_often,guilt_ridden,overwhelmed,often_restless,emotionally_flat,indifferent,out_of_control,distracted_sometimes,insecure,deep_despair^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => neutral
+    [4] => tired
+    [5] => withdrawn
+    [6] => pessimistic
+    [7] => occasionally_moody
+    [8] => no_appetite
+    [9] => accepting
+    [10] => pain_often
+    [11] => self_blaming
+    [12] => occasionally_hesitant
+    [13] => totally_at_ease
+    [14] => neutral
+    [15] => detached
+    [16] => out_of_control
+    [17] => distracted_sometimes
+    [18] => burdensome
+    [19] => deep_despair
+)
+
+Running command: ^"C:^\Users^\haiti^\AppData^\Local^\Programs^\Python^\Python313^\python.exe^" ^"C:^\xampp^\htdocs^\banol6^\backend^\model.py^"^"restless,often_sad,mentally_scattered,neutral,tired,withdrawn,pessimistic,occasionally_moody,no_appetite,accepting,pain_often,self_blaming,occasionally_hesitant,totally_at_ease,neutral,detached,out_of_control,distracted_sometimes,burdensome,deep_despair^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => neutral
+    [4] => tired
+    [5] => withdrawn
+    [6] => pessimistic
+    [7] => occasionally_moody
+    [8] => no_appetite
+    [9] => accepting
+    [10] => pain_often
+    [11] => self_blaming
+    [12] => occasionally_hesitant
+    [13] => totally_at_ease
+    [14] => neutral
+    [15] => detached
+    [16] => out_of_control
+    [17] => distracted_sometimes
+    [18] => burdensome
+    [19] => deep_despair
+)
+
+Running command: ^"C:^\Users^\haiti^\AppData^\Local^\Programs^\Python^\Python313^\python.exe^" ^"C:^\xampp^\htdocs^\banol6^\backend^\model.py^"^"restless,often_sad,mentally_scattered,neutral,tired,withdrawn,pessimistic,occasionally_moody,no_appetite,accepting,pain_often,self_blaming,occasionally_hesitant,totally_at_ease,neutral,detached,out_of_control,distracted_sometimes,burdensome,deep_despair^"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => emotionally_numb
+    [4] => drained
+    [5] => withdrawn
+    [6] => pessimistic
+    [7] => volatile
+    [8] => normal_appetite
+    [9] => indifferent
+    [10] => occasional_discomfort
+    [11] => guilt_ridden
+    [12] => overwhelmed
+    [13] => constantly_anxious
+    [14] => joyless
+    [15] => emotionally_numb
+    [16] => out_of_control
+    [17] => distracted_sometimes
+    [18] => burdensome
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,emotionally_numb,drained,withdrawn,pessimistic,volatile,normal_appetite,indifferent,occasional_discomfort,guilt_ridden,overwhelmed,constantly_anxious,joyless,emotionally_numb,out_of_control,distracted_sometimes,burdensome,hopeless_thoughts"
+Python output: 1,0.7900
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => emotionally_numb
+    [4] => drained
+    [5] => withdrawn
+    [6] => pessimistic
+    [7] => volatile
+    [8] => normal_appetite
+    [9] => indifferent
+    [10] => occasional_discomfort
+    [11] => guilt_ridden
+    [12] => overwhelmed
+    [13] => constantly_anxious
+    [14] => joyless
+    [15] => emotionally_numb
+    [16] => out_of_control
+    [17] => distracted_sometimes
+    [18] => burdensome
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,emotionally_numb,drained,withdrawn,pessimistic,volatile,normal_appetite,indifferent,occasional_discomfort,guilt_ridden,overwhelmed,constantly_anxious,joyless,emotionally_numb,out_of_control,distracted_sometimes,burdensome,hopeless_thoughts"
+Python output: 1,0.7900
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => emotionally_numb
+    [4] => drained
+    [5] => withdrawn
+    [6] => pessimistic
+    [7] => volatile
+    [8] => normal_appetite
+    [9] => indifferent
+    [10] => occasional_discomfort
+    [11] => guilt_ridden
+    [12] => overwhelmed
+    [13] => constantly_anxious
+    [14] => joyless
+    [15] => emotionally_numb
+    [16] => out_of_control
+    [17] => distracted_sometimes
+    [18] => burdensome
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,emotionally_numb,drained,withdrawn,pessimistic,volatile,normal_appetite,indifferent,occasional_discomfort,guilt_ridden,overwhelmed,constantly_anxious,joyless,emotionally_numb,out_of_control,distracted_sometimes,burdensome,hopeless_thoughts"
+Python output: 1,0.7900
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => deeply_rested
+    [1] => generally_fine
+    [2] => distracted_often
+    [3] => disinterested
+    [4] => drained
+    [5] => open_to_others
+    [6] => indifferent
+    [7] => irritable
+    [8] => overeating
+    [9] => accepting
+    [10] => occasional_discomfort
+    [11] => guilt_ridden
+    [12] => occasionally_hesitant
+    [13] => mostly_calm
+    [14] => joyless
+    [15] => emotionally_numb
+    [16] => unpredictable
+    [17] => distracted_sometimes
+    [18] => unsure
+    [19] => sometimes_numb
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "deeply_rested,generally_fine,distracted_often,disinterested,drained,open_to_others,indifferent,irritable,overeating,accepting,occasional_discomfort,guilt_ridden,occasionally_hesitant,mostly_calm,joyless,emotionally_numb,unpredictable,distracted_sometimes,unsure,sometimes_numb"
+Python output: 0,0.0103
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => emotionally_numb
+    [4] => drained
+    [5] => withdrawn
+    [6] => hopeless
+    [7] => volatile
+    [8] => no_appetite
+    [9] => worthless
+    [10] => pain_often
+    [11] => guilt_ridden
+    [12] => overwhelmed
+    [13] => constantly_anxious
+    [14] => emotionally_flat
+    [15] => emotionally_numb
+    [16] => out_of_control
+    [17] => foggy
+    [18] => burdensome
+    [19] => deep_despair
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,emotionally_numb,drained,withdrawn,hopeless,volatile,no_appetite,worthless,pain_often,guilt_ridden,overwhelmed,constantly_anxious,emotionally_flat,emotionally_numb,out_of_control,foggy,burdensome,deep_despair"
+Python output: 1,0.7900
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => deeply_rested
+    [1] => uplifted
+    [2] => laser_focused
+    [3] => excited_about_life
+    [4] => fully_energized
+    [5] => socially_engaged
+    [6] => optimistic
+    [7] => calm_and_consistent
+    [8] => gaining_weight
+    [9] => self_compassionate
+    [10] => physically_well
+    [11] => empowered
+    [12] => confident_decider
+    [13] => totally_at_ease
+    [14] => frequently_joyful
+    [15] => deeply_engaged
+    [16] => peacefully_balanced
+    [17] => mentally_sharp
+    [18] => valued_and_loved
+    [19] => holding_hope
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "deeply_rested,uplifted,laser_focused,excited_about_life,fully_energized,socially_engaged,optimistic,calm_and_consistent,gaining_weight,self_compassionate,physically_well,empowered,confident_decider,totally_at_ease,frequently_joyful,deeply_engaged,peacefully_balanced,mentally_sharp,valued_and_loved,holding_hope"
+Python output: 0,0.0103
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => sometimes_rested
+    [1] => neutral
+    [2] => occasionally_distracted
+    [3] => neutral
+    [4] => sometimes_weary
+    [5] => neutral
+    [6] => indifferent
+    [7] => occasionally_moody
+    [8] => overeating
+    [9] => indifferent
+    [10] => neutral
+    [11] => accepting_sometimes
+    [12] => occasionally_hesitant
+    [13] => sometimes_on_edge
+    [14] => neutral
+    [15] => indifferent
+    [16] => occasionally_intense
+    [17] => distracted_sometimes
+    [18] => unsure
+    [19] => sometimes_numb
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "sometimes_rested,neutral,occasionally_distracted,neutral,sometimes_weary,neutral,indifferent,occasionally_moody,overeating,indifferent,neutral,accepting_sometimes,occasionally_hesitant,sometimes_on_edge,neutral,indifferent,occasionally_intense,distracted_sometimes,unsure,sometimes_numb"
+Python output: 0,0.0103
+

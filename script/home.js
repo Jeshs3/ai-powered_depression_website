@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Final headers (Total Score, Status, Action)
-  const finalHeaders = ["Total Score", "Status", "Action", "View Profile"];
+  const finalHeaders = ["Total Score", "Status", "Probability Score", "Action", "View Profile"];
   finalHeaders.forEach(text => {
       const th = document.createElement('th');
       th.textContent = text;
@@ -52,12 +52,16 @@ document.addEventListener("DOMContentLoaded", function () {
           tr.innerHTML += `<td>${new Date(res.date).toLocaleDateString()}</td>`; // Format date
 
           // Render each answer (Q1, Q2, ..., Q20)
-          res.answers.forEach(ans => {
-              tr.innerHTML += `<td>${ans}</td>`;
-          });
+          const answers = res.answers?.slice(0, questionCount) ?? [];
+          for (let i = 0; i < questionCount; i++) {
+            const display = answers[i] ?? "-";
+            tr.innerHTML += `<td>${display}</td>`;
+         }
+        
 
-          tr.innerHTML += `<td>${res.total}</td>`;
-          tr.innerHTML += `<td><span class="status pending">Pending Analysis</span></td>`;
+          tr.innerHTML += `<td>${res.score}</td>`;
+          tr.innerHTML += `<td>${res.status}</td>`;
+          tr.innerHTML += `<td>${res.probability ?? "Pending Analysis"}</td>`;
           tr.innerHTML += `<td><button class="delete-btn" onclick="deleteData('${res.userid}')">Delete</button></td>`;
           tr.innerHTML += `<td><button class="view-btn" onclick="window.location.href='profile.php?id=${res.userid}'">View Profile</button></td>`;
           tableBody.appendChild(tr);
