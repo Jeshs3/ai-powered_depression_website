@@ -572,3 +572,1499 @@ Received answers: Array
 Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "sometimes_rested,neutral,occasionally_distracted,neutral,sometimes_weary,neutral,indifferent,occasionally_moody,overeating,indifferent,neutral,accepting_sometimes,occasionally_hesitant,sometimes_on_edge,neutral,indifferent,occasionally_intense,distracted_sometimes,unsure,sometimes_numb"
 Python output: 0,0.0103
 
+Starting prediction...
+Received answers: Array
+(
+    [0] => sometimes_rested
+    [1] => low_mood
+    [2] => distracted_often
+    [3] => neutral
+    [4] => sometimes_weary
+    [5] => neutral
+    [6] => pessimistic
+    [7] => occasionally_moody
+    [8] => gaining_weight
+    [9] => self_critical
+    [10] => pain_often
+    [11] => accepting_sometimes
+    [12] => overwhelmed
+    [13] => often_restless
+    [14] => joyless
+    [15] => indifferent
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => insecure
+    [19] => deep_despair
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "sometimes_rested,low_mood,distracted_often,neutral,sometimes_weary,neutral,pessimistic,occasionally_moody,gaining_weight,self_critical,pain_often,accepting_sometimes,overwhelmed,often_restless,joyless,indifferent,out_of_control,forgetful,insecure,deep_despair"
+Python output: Debug - Parsed emotion values: ['sometimes_rested', 'low_mood', 'distracted_often', 'neutral', 'sometimes_weary', 'neutral', 'pessimistic', 'occasionally_moody', 'gaining_weight', 'self_critical', 'pain_often', 'accepting_sometimes', 'overwhelmed', 'often_restless', 'joyless', 'indifferent', 'out_of_control', 'forgetful', 'insecure', 'deep_despair']
+Debug - Input emotion values: ['sometimes_rested', 'low_mood', 'distracted_often', 'neutral', 'sometimes_weary', 'neutral', 'pessimistic', 'occasionally_moody', 'gaining_weight', 'self_critical', 'pain_often', 'accepting_sometimes', 'overwhelmed', 'often_restless', 'joyless', 'indifferent', 'out_of_control', 'forgetful', 'insecure', 'deep_despair']
+Debug - Generated input texts: Error: 'charmap' codec can't encode character '\U0001f60c' in position 48: character maps to <undefined>
+
+Error: Unexpected output format from Python: Debug - Parsed emotion values: ['sometimes_rested', 'low_mood', 'distracted_often', 'neutral', 'sometimes_weary', 'neutral', 'pessimistic', 'occasionally_moody', 'gaining_weight', 'self_critical', 'pain_often', 'accepting_sometimes', 'overwhelmed', 'often_restless', 'joyless', 'indifferent', 'out_of_control', 'forgetful', 'insecure', 'deep_despair']
+Debug - Input emotion values: ['sometimes_rested', 'low_mood', 'distracted_often', 'neutral', 'sometimes_weary', 'neutral', 'pessimistic', 'occasionally_moody', 'gaining_weight', 'self_critical', 'pain_often', 'accepting_sometimes', 'overwhelmed', 'often_restless', 'joyless', 'indifferent', 'out_of_control', 'forgetful', 'insecure', 'deep_despair']
+Debug - Generated input texts: Error: 'charmap' codec can't encode character '\U0001f60c' in position 48: character maps to <undefined>
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => neutral
+    [2] => distracted_often
+    [3] => disinterested
+    [4] => sometimes_weary
+    [5] => prefer_isolation
+    [6] => cautiously_hopeful
+    [7] => irritable
+    [8] => no_appetite
+    [9] => self_critical
+    [10] => neutral
+    [11] => guilt_ridden
+    [12] => uncertain
+    [13] => sometimes_on_edge
+    [14] => joyless
+    [15] => emotionally_numb
+    [16] => occasionally_intense
+    [17] => attentive
+    [18] => unsure
+    [19] => deep_despair
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,neutral,distracted_often,disinterested,sometimes_weary,prefer_isolation,cautiously_hopeful,irritable,no_appetite,self_critical,neutral,guilt_ridden,uncertain,sometimes_on_edge,joyless,emotionally_numb,occasionally_intense,attentive,unsure,deep_despair"
+Python output: Debug - Parsed emotion values: ['restless', 'neutral', 'distracted_often', 'disinterested', 'sometimes_weary', 'prefer_isolation', 'cautiously_hopeful', 'irritable', 'no_appetite', 'self_critical', 'neutral', 'guilt_ridden', 'uncertain', 'sometimes_on_edge', 'joyless', 'emotionally_numb', 'occasionally_intense', 'attentive', 'unsure', 'deep_despair']
+Debug - Input emotion values: ['restless', 'neutral', 'distracted_often', 'disinterested', 'sometimes_weary', 'prefer_isolation', 'cautiously_hopeful', 'irritable', 'no_appetite', 'self_critical', 'neutral', 'guilt_ridden', 'uncertain', 'sometimes_on_edge', 'joyless', 'emotionally_numb', 'occasionally_intense', 'attentive', 'unsure', 'deep_despair']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Neutral', '3. I struggle to concentrate on daily tasks.  Distracted Often', '4. I have lost interest in activities I used to enjoy.  Disinterested', '5. I feel physically exhausted even when I get enough rest.  Sometimes Weary', '6. I avoid social interactions or prefer to be alone.  Prefer Isolation', '7. I feel hopeless about the future.  Cautiously Hopeful', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  No Appetite', '10. I have negative thoughts about myself.  Self-Critical', '2. I feel sad or down without a clear reason.  Neutral', '12. I feel guilty or blame myself.  Guilt-Ridden', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Sometimes On Edge', '15. I find it hard to experience joy.  Joyless', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '17. My "emotions" are unpredictable or uncontrollable.  Occasionally Intense', '18. I have trouble remembering things or focusing.  Attentive', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Deep Despair']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.89142582e-01 3.10857418e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [1.00000000e+00 0.00000000e+00]
+ [7.89570533e-01 2.10429467e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [8.19659185e-01 1.80340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [8.00000000e-02 9.20000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [9.70000000e-01 3.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.40000000e-01 2.60000000e-01]]
+Debug - Avg probability: 0.21522092885056404
+0,0.2152
+
+Error: Unexpected output format from Python: Debug - Parsed emotion values: ['restless', 'neutral', 'distracted_often', 'disinterested', 'sometimes_weary', 'prefer_isolation', 'cautiously_hopeful', 'irritable', 'no_appetite', 'self_critical', 'neutral', 'guilt_ridden', 'uncertain', 'sometimes_on_edge', 'joyless', 'emotionally_numb', 'occasionally_intense', 'attentive', 'unsure', 'deep_despair']
+Debug - Input emotion values: ['restless', 'neutral', 'distracted_often', 'disinterested', 'sometimes_weary', 'prefer_isolation', 'cautiously_hopeful', 'irritable', 'no_appetite', 'self_critical', 'neutral', 'guilt_ridden', 'uncertain', 'sometimes_on_edge', 'joyless', 'emotionally_numb', 'occasionally_intense', 'attentive', 'unsure', 'deep_despair']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Neutral', '3. I struggle to concentrate on daily tasks.  Distracted Often', '4. I have lost interest in activities I used to enjoy.  Disinterested', '5. I feel physically exhausted even when I get enough rest.  Sometimes Weary', '6. I avoid social interactions or prefer to be alone.  Prefer Isolation', '7. I feel hopeless about the future.  Cautiously Hopeful', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  No Appetite', '10. I have negative thoughts about myself.  Self-Critical', '2. I feel sad or down without a clear reason.  Neutral', '12. I feel guilty or blame myself.  Guilt-Ridden', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Sometimes On Edge', '15. I find it hard to experience joy.  Joyless', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '17. My "emotions" are unpredictable or uncontrollable.  Occasionally Intense', '18. I have trouble remembering things or focusing.  Attentive', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Deep Despair']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.89142582e-01 3.10857418e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [1.00000000e+00 0.00000000e+00]
+ [7.89570533e-01 2.10429467e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [8.19659185e-01 1.80340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [8.00000000e-02 9.20000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [9.70000000e-01 3.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.40000000e-01 2.60000000e-01]]
+Debug - Avg probability: 0.21522092885056404
+0,0.2152
+
+Starting prediction...
+Error: Missing 'answers' parameter.
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => low_mood
+    [2] => distracted_often
+    [3] => emotionally_numb
+    [4] => tired
+    [5] => withdrawn
+    [6] => indifferent
+    [7] => occasionally_moody
+    [8] => normal_appetite
+    [9] => worthless
+    [10] => pain_often
+    [11] => accepting_sometimes
+    [12] => uncertain
+    [13] => mostly_calm
+    [14] => frequently_joyful
+    [15] => indifferent
+    [16] => unpredictable
+    [17] => foggy
+    [18] => unsure
+    [19] => holding_hope
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,low_mood,distracted_often,emotionally_numb,tired,withdrawn,indifferent,occasionally_moody,normal_appetite,worthless,pain_often,accepting_sometimes,uncertain,mostly_calm,frequently_joyful,indifferent,unpredictable,foggy,unsure,holding_hope"
+Python output: Debug - Parsed emotion values: ['restless', 'low_mood', 'distracted_often', 'emotionally_numb', 'tired', 'withdrawn', 'indifferent', 'occasionally_moody', 'normal_appetite', 'worthless', 'pain_often', 'accepting_sometimes', 'uncertain', 'mostly_calm', 'frequently_joyful', 'indifferent', 'unpredictable', 'foggy', 'unsure', 'holding_hope']
+Debug - Input emotion values: ['restless', 'low_mood', 'distracted_often', 'emotionally_numb', 'tired', 'withdrawn', 'indifferent', 'occasionally_moody', 'normal_appetite', 'worthless', 'pain_often', 'accepting_sometimes', 'uncertain', 'mostly_calm', 'frequently_joyful', 'indifferent', 'unpredictable', 'foggy', 'unsure', 'holding_hope']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Low Mood Sometimes', '3. I struggle to concentrate on daily tasks.  Distracted Often', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '5. I feel physically exhausted even when I get enough rest.  Tired', '6. I avoid social interactions or prefer to be alone. Withdrawn', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Occasionally Moody', '9. I have a decreased or increased appetite.  Normal Appetite', '10. I have negative thoughts about myself.  Worthless', '11. I experience frequent headaches or body pain.  Pain Often', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Mostly Calm', '15. I find it hard to experience joy.  Frequently Joyful', '7. I feel hopeless about the future.  Indifferent', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Foggy', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Holding Hope']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69701260e-01 4.30298740e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.79719888e-01 3.20280112e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [7.89570533e-01 2.10429467e-01]
+ [9.29582511e-01 7.04174888e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [6.00000000e-02 9.40000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.20000000e-01 2.80000000e-01]]
+Debug - Avg probability: 0.22272397322498003
+0,0.2227
+
+Error: Unexpected output format from Python: Debug - Parsed emotion values: ['restless', 'low_mood', 'distracted_often', 'emotionally_numb', 'tired', 'withdrawn', 'indifferent', 'occasionally_moody', 'normal_appetite', 'worthless', 'pain_often', 'accepting_sometimes', 'uncertain', 'mostly_calm', 'frequently_joyful', 'indifferent', 'unpredictable', 'foggy', 'unsure', 'holding_hope']
+Debug - Input emotion values: ['restless', 'low_mood', 'distracted_often', 'emotionally_numb', 'tired', 'withdrawn', 'indifferent', 'occasionally_moody', 'normal_appetite', 'worthless', 'pain_often', 'accepting_sometimes', 'uncertain', 'mostly_calm', 'frequently_joyful', 'indifferent', 'unpredictable', 'foggy', 'unsure', 'holding_hope']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Low Mood Sometimes', '3. I struggle to concentrate on daily tasks.  Distracted Often', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '5. I feel physically exhausted even when I get enough rest.  Tired', '6. I avoid social interactions or prefer to be alone. Withdrawn', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Occasionally Moody', '9. I have a decreased or increased appetite.  Normal Appetite', '10. I have negative thoughts about myself.  Worthless', '11. I experience frequent headaches or body pain.  Pain Often', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Mostly Calm', '15. I find it hard to experience joy.  Frequently Joyful', '7. I feel hopeless about the future.  Indifferent', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Foggy', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Holding Hope']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69701260e-01 4.30298740e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.79719888e-01 3.20280112e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [7.89570533e-01 2.10429467e-01]
+ [9.29582511e-01 7.04174888e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [6.00000000e-02 9.40000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.20000000e-01 2.80000000e-01]]
+Debug - Avg probability: 0.22272397322498003
+0,0.2227
+
+Starting prediction...
+Error: Missing 'answers' parameter.
+Starting prediction...
+Error: Missing 'answers' parameter.
+Starting prediction...
+Error: Missing 'answers' parameter.
+Starting prediction...
+Received answers: Array
+(
+    [0] => sometimes_rested
+    [1] => often_sad
+    [2] => distracted_often
+    [3] => neutral
+    [4] => energetic
+    [5] => socially_engaged
+    [6] => indifferent
+    [7] => volatile
+    [8] => normal_appetite
+    [9] => indifferent
+    [10] => neutral
+    [11] => empowered
+    [12] => occasionally_hesitant
+    [13] => often_restless
+    [14] => emotionally_flat
+    [15] => detached
+    [16] => unpredictable
+    [17] => distracted_sometimes
+    [18] => appreciated_sometimes
+    [19] => deep_despair
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "sometimes_rested,often_sad,distracted_often,neutral,energetic,socially_engaged,indifferent,volatile,normal_appetite,indifferent,neutral,empowered,occasionally_hesitant,often_restless,emotionally_flat,detached,unpredictable,distracted_sometimes,appreciated_sometimes,deep_despair"
+Python output: Debug - Parsed emotion values: ['sometimes_rested', 'often_sad', 'distracted_often', 'neutral', 'energetic', 'socially_engaged', 'indifferent', 'volatile', 'normal_appetite', 'indifferent', 'neutral', 'empowered', 'occasionally_hesitant', 'often_restless', 'emotionally_flat', 'detached', 'unpredictable', 'distracted_sometimes', 'appreciated_sometimes', 'deep_despair']
+Debug - Input emotion values: ['sometimes_rested', 'often_sad', 'distracted_often', 'neutral', 'energetic', 'socially_engaged', 'indifferent', 'volatile', 'normal_appetite', 'indifferent', 'neutral', 'empowered', 'occasionally_hesitant', 'often_restless', 'emotionally_flat', 'detached', 'unpredictable', 'distracted_sometimes', 'appreciated_sometimes', 'deep_despair']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Occasionally Rested', '2. I feel sad or down without a clear reason.  Often Sad', '3. I struggle to concentrate on daily tasks.  Distracted Often', '2. I feel sad or down without a clear reason.  Neutral', '5. I feel physically exhausted even when I get enough rest.  Energetic', '6. I avoid social interactions or prefer to be alone.  Socially Engaged', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Volatile', '9. I have a decreased or increased appetite.  Normal Appetite', '7. I feel hopeless about the future.  Indifferent', '2. I feel sad or down without a clear reason.  Neutral', '12. I feel guilty or blame myself.  Empowered', '13. I have difficulty making decisions.  Occasionally Hesitant', '14. I feel anxious or restless.  Often Restless', '15. I find it hard to experience joy.  Emotionally Flat', '16. I feel detached or numb.  Detached', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Distracted Sometimes', '19. I feel like I am a burden.  Appreciated Sometimes', '20. Ive had thoughts of self-harm or life being meaningless.  Deep Despair']
+All probs: [[9.89672106e-01 1.03278943e-02]
+ [5.70000000e-01 4.30000000e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [5.69729285e-01 4.30270715e-01]
+ [7.29142582e-01 2.70857418e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [8.19659185e-01 1.80340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [6.00000000e-02 9.40000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [8.39238228e-01 1.60761772e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.79536604e-01 2.04633957e-02]
+ [8.80000000e-01 1.20000000e-01]
+ [7.40000000e-01 2.60000000e-01]]
+Debug - Avg probability: 0.21527710862278412
+0,0.2153
+
+Error: Unexpected output format from Python: Debug - Parsed emotion values: ['sometimes_rested', 'often_sad', 'distracted_often', 'neutral', 'energetic', 'socially_engaged', 'indifferent', 'volatile', 'normal_appetite', 'indifferent', 'neutral', 'empowered', 'occasionally_hesitant', 'often_restless', 'emotionally_flat', 'detached', 'unpredictable', 'distracted_sometimes', 'appreciated_sometimes', 'deep_despair']
+Debug - Input emotion values: ['sometimes_rested', 'often_sad', 'distracted_often', 'neutral', 'energetic', 'socially_engaged', 'indifferent', 'volatile', 'normal_appetite', 'indifferent', 'neutral', 'empowered', 'occasionally_hesitant', 'often_restless', 'emotionally_flat', 'detached', 'unpredictable', 'distracted_sometimes', 'appreciated_sometimes', 'deep_despair']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Occasionally Rested', '2. I feel sad or down without a clear reason.  Often Sad', '3. I struggle to concentrate on daily tasks.  Distracted Often', '2. I feel sad or down without a clear reason.  Neutral', '5. I feel physically exhausted even when I get enough rest.  Energetic', '6. I avoid social interactions or prefer to be alone.  Socially Engaged', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Volatile', '9. I have a decreased or increased appetite.  Normal Appetite', '7. I feel hopeless about the future.  Indifferent', '2. I feel sad or down without a clear reason.  Neutral', '12. I feel guilty or blame myself.  Empowered', '13. I have difficulty making decisions.  Occasionally Hesitant', '14. I feel anxious or restless.  Often Restless', '15. I find it hard to experience joy.  Emotionally Flat', '16. I feel detached or numb.  Detached', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Distracted Sometimes', '19. I feel like I am a burden.  Appreciated Sometimes', '20. Ive had thoughts of self-harm or life being meaningless.  Deep Despair']
+All probs: [[9.89672106e-01 1.03278943e-02]
+ [5.70000000e-01 4.30000000e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [5.69729285e-01 4.30270715e-01]
+ [7.29142582e-01 2.70857418e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [8.19659185e-01 1.80340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [6.00000000e-02 9.40000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [8.39238228e-01 1.60761772e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.79536604e-01 2.04633957e-02]
+ [8.80000000e-01 1.20000000e-01]
+ [7.40000000e-01 2.60000000e-01]]
+Debug - Avg probability: 0.21527710862278412
+0,0.2153
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => emotionally_numb
+    [4] => tired
+    [5] => withdrawn
+    [6] => indifferent
+    [7] => irritable
+    [8] => overeating
+    [9] => accepting
+    [10] => occasional_discomfort
+    [11] => accepting_sometimes
+    [12] => calm_decision_maker
+    [13] => often_restless
+    [14] => emotionally_flat
+    [15] => detached
+    [16] => unpredictable
+    [17] => distracted_sometimes
+    [18] => appreciated_sometimes
+    [19] => holding_hope
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,emotionally_numb,tired,withdrawn,indifferent,irritable,overeating,accepting,occasional_discomfort,accepting_sometimes,calm_decision_maker,often_restless,emotionally_flat,detached,unpredictable,distracted_sometimes,appreciated_sometimes,holding_hope"
+Python output: Debug - Parsed emotion values: ['restless', 'often_sad', 'mentally_scattered', 'emotionally_numb', 'tired', 'withdrawn', 'indifferent', 'irritable', 'overeating', 'accepting', 'occasional_discomfort', 'accepting_sometimes', 'calm_decision_maker', 'often_restless', 'emotionally_flat', 'detached', 'unpredictable', 'distracted_sometimes', 'appreciated_sometimes', 'holding_hope']
+Debug - Input emotion values: ['restless', 'often_sad', 'mentally_scattered', 'emotionally_numb', 'tired', 'withdrawn', 'indifferent', 'irritable', 'overeating', 'accepting', 'occasional_discomfort', 'accepting_sometimes', 'calm_decision_maker', 'often_restless', 'emotionally_flat', 'detached', 'unpredictable', 'distracted_sometimes', 'appreciated_sometimes', 'holding_hope']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Often Sad', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '5. I feel physically exhausted even when I get enough rest.  Tired', '6. I avoid social interactions or prefer to be alone. Withdrawn', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  Overeating', '10. I have negative thoughts about myself.  Accepting', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Calm Decision-Maker', '14. I feel anxious or restless.  Often Restless', '15. I find it hard to experience joy.  Emotionally Flat', '16. I feel detached or numb.  Detached', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Distracted Sometimes', '19. I feel like I am a burden.  Appreciated Sometimes', '20. Ive had thoughts of self-harm or life being meaningless.  Holding Hope']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.70000000e-01 4.30000000e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.79719888e-01 3.20280112e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.99536604e-01 4.63395681e-04]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [6.79694261e-01 3.20305739e-01]
+ [6.00000000e-02 9.40000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [8.39238228e-01 1.60761772e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.79536604e-01 2.04633957e-02]
+ [8.80000000e-01 1.20000000e-01]
+ [7.20000000e-01 2.80000000e-01]]
+Debug - Avg probability: 0.22020752606883306
+0,0.2202
+
+Error: Unexpected output format from Python: Debug - Parsed emotion values: ['restless', 'often_sad', 'mentally_scattered', 'emotionally_numb', 'tired', 'withdrawn', 'indifferent', 'irritable', 'overeating', 'accepting', 'occasional_discomfort', 'accepting_sometimes', 'calm_decision_maker', 'often_restless', 'emotionally_flat', 'detached', 'unpredictable', 'distracted_sometimes', 'appreciated_sometimes', 'holding_hope']
+Debug - Input emotion values: ['restless', 'often_sad', 'mentally_scattered', 'emotionally_numb', 'tired', 'withdrawn', 'indifferent', 'irritable', 'overeating', 'accepting', 'occasional_discomfort', 'accepting_sometimes', 'calm_decision_maker', 'often_restless', 'emotionally_flat', 'detached', 'unpredictable', 'distracted_sometimes', 'appreciated_sometimes', 'holding_hope']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Often Sad', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '5. I feel physically exhausted even when I get enough rest.  Tired', '6. I avoid social interactions or prefer to be alone. Withdrawn', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  Overeating', '10. I have negative thoughts about myself.  Accepting', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Calm Decision-Maker', '14. I feel anxious or restless.  Often Restless', '15. I find it hard to experience joy.  Emotionally Flat', '16. I feel detached or numb.  Detached', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Distracted Sometimes', '19. I feel like I am a burden.  Appreciated Sometimes', '20. Ive had thoughts of self-harm or life being meaningless.  Holding Hope']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.70000000e-01 4.30000000e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.79719888e-01 3.20280112e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.99536604e-01 4.63395681e-04]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [6.79694261e-01 3.20305739e-01]
+ [6.00000000e-02 9.40000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [8.39238228e-01 1.60761772e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.79536604e-01 2.04633957e-02]
+ [8.80000000e-01 1.20000000e-01]
+ [7.20000000e-01 2.80000000e-01]]
+Debug - Avg probability: 0.22020752606883306
+0,0.2202
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => low_mood
+    [2] => distracted_often
+    [3] => emotionally_numb
+    [4] => sometimes_weary
+    [5] => prefer_isolation
+    [6] => hopeless
+    [7] => volatile
+    [8] => overeating
+    [9] => self_critical
+    [10] => pain_often
+    [11] => accepting_sometimes
+    [12] => calm_decision_maker
+    [13] => often_restless
+    [14] => occasionally_happy
+    [15] => indifferent
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => unsure
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,low_mood,distracted_often,emotionally_numb,sometimes_weary,prefer_isolation,hopeless,volatile,overeating,self_critical,pain_often,accepting_sometimes,calm_decision_maker,often_restless,occasionally_happy,indifferent,out_of_control,forgetful,unsure,hopeless_thoughts"
+Python output: Debug - Parsed emotion values: ['restless', 'low_mood', 'distracted_often', 'emotionally_numb', 'sometimes_weary', 'prefer_isolation', 'hopeless', 'volatile', 'overeating', 'self_critical', 'pain_often', 'accepting_sometimes', 'calm_decision_maker', 'often_restless', 'occasionally_happy', 'indifferent', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Input emotion values: ['restless', 'low_mood', 'distracted_often', 'emotionally_numb', 'sometimes_weary', 'prefer_isolation', 'hopeless', 'volatile', 'overeating', 'self_critical', 'pain_often', 'accepting_sometimes', 'calm_decision_maker', 'often_restless', 'occasionally_happy', 'indifferent', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Low Mood Sometimes', '3. I struggle to concentrate on daily tasks.  Distracted Often', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '5. I feel physically exhausted even when I get enough rest.  Sometimes Weary', '6. I avoid social interactions or prefer to be alone.  Prefer Isolation', '7. I feel hopeless about the future.  Hopeless', '8. I experience sudden mood swings or irritability.  Volatile', '9. I have a decreased or increased appetite.  Overeating', '10. I have negative thoughts about myself.  Self-Critical', '11. I experience frequent headaches or body pain.  Pain Often', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Calm Decision-Maker', '14. I feel anxious or restless.  Often Restless', '15. I find it hard to experience joy.  Occasionally Happy', '7. I feel hopeless about the future.  Indifferent', '17. My "emotions" are unpredictable or uncontrollable.  Out of Control', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69701260e-01 4.30298740e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.89142582e-01 3.10857418e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.99536604e-01 4.63395681e-04]
+ [7.89570533e-01 2.10429467e-01]
+ [9.29582511e-01 7.04174888e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [6.79694261e-01 3.20305739e-01]
+ [6.00000000e-02 9.40000000e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.10000000e-01 9.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.240726693770196
+0,0.2407
+
+Error: Missing fields in Python output: Debug - Parsed emotion values: ['restless', 'low_mood', 'distracted_often', 'emotionally_numb', 'sometimes_weary', 'prefer_isolation', 'hopeless', 'volatile', 'overeating', 'self_critical', 'pain_often', 'accepting_sometimes', 'calm_decision_maker', 'often_restless', 'occasionally_happy', 'indifferent', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Input emotion values: ['restless', 'low_mood', 'distracted_often', 'emotionally_numb', 'sometimes_weary', 'prefer_isolation', 'hopeless', 'volatile', 'overeating', 'self_critical', 'pain_often', 'accepting_sometimes', 'calm_decision_maker', 'often_restless', 'occasionally_happy', 'indifferent', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Low Mood Sometimes', '3. I struggle to concentrate on daily tasks.  Distracted Often', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '5. I feel physically exhausted even when I get enough rest.  Sometimes Weary', '6. I avoid social interactions or prefer to be alone.  Prefer Isolation', '7. I feel hopeless about the future.  Hopeless', '8. I experience sudden mood swings or irritability.  Volatile', '9. I have a decreased or increased appetite.  Overeating', '10. I have negative thoughts about myself.  Self-Critical', '11. I experience frequent headaches or body pain.  Pain Often', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Calm Decision-Maker', '14. I feel anxious or restless.  Often Restless', '15. I find it hard to experience joy.  Occasionally Happy', '7. I feel hopeless about the future.  Indifferent', '17. My "emotions" are unpredictable or uncontrollable.  Out of Control', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69701260e-01 4.30298740e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.89142582e-01 3.10857418e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.99536604e-01 4.63395681e-04]
+ [7.89570533e-01 2.10429467e-01]
+ [9.29582511e-01 7.04174888e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [6.79694261e-01 3.20305739e-01]
+ [6.00000000e-02 9.40000000e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.10000000e-01 9.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.240726693770196
+0,0.2407
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => low_mood
+    [2] => distracted_often
+    [3] => neutral
+    [4] => tired
+    [5] => withdrawn
+    [6] => indifferent
+    [7] => irritable
+    [8] => normal_appetite
+    [9] => indifferent
+    [10] => neutral
+    [11] => self_blaming
+    [12] => overwhelmed
+    [13] => sometimes_on_edge
+    [14] => joyless
+    [15] => emotionally_numb
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => unsure
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,low_mood,distracted_often,neutral,tired,withdrawn,indifferent,irritable,normal_appetite,indifferent,neutral,self_blaming,overwhelmed,sometimes_on_edge,joyless,emotionally_numb,out_of_control,forgetful,unsure,hopeless_thoughts"
+Python output: Debug - Parsed emotion values: ['restless', 'low_mood', 'distracted_often', 'neutral', 'tired', 'withdrawn', 'indifferent', 'irritable', 'normal_appetite', 'indifferent', 'neutral', 'self_blaming', 'overwhelmed', 'sometimes_on_edge', 'joyless', 'emotionally_numb', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Input emotion values: ['restless', 'low_mood', 'distracted_often', 'neutral', 'tired', 'withdrawn', 'indifferent', 'irritable', 'normal_appetite', 'indifferent', 'neutral', 'self_blaming', 'overwhelmed', 'sometimes_on_edge', 'joyless', 'emotionally_numb', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Low Mood Sometimes', '3. I struggle to concentrate on daily tasks.  Distracted Often', '2. I feel sad or down without a clear reason.  Neutral', '5. I feel physically exhausted even when I get enough rest.  Tired', '6. I avoid social interactions or prefer to be alone. Withdrawn', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  Normal Appetite', '7. I feel hopeless about the future.  Indifferent', '2. I feel sad or down without a clear reason.  Neutral', '12. I feel guilty or blame myself.  Self-Blaming', '13. I have difficulty making decisions.  Overwhelmed', '14. I feel anxious or restless.  Sometimes On Edge', '15. I find it hard to experience joy.  Joyless', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '17. My "emotions" are unpredictable or uncontrollable.  Out of Control', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69701260e-01 4.30298740e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [5.69729285e-01 4.30270715e-01]
+ [6.79719888e-01 3.20280112e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [8.19659185e-01 1.80340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [8.00000000e-02 9.20000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [9.10000000e-01 9.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.2527167398519291
+{"prediction": 0, "probability": 0.2527}
+
+Error: Missing fields in Python output: Debug - Parsed emotion values: ['restless', 'low_mood', 'distracted_often', 'neutral', 'tired', 'withdrawn', 'indifferent', 'irritable', 'normal_appetite', 'indifferent', 'neutral', 'self_blaming', 'overwhelmed', 'sometimes_on_edge', 'joyless', 'emotionally_numb', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Input emotion values: ['restless', 'low_mood', 'distracted_often', 'neutral', 'tired', 'withdrawn', 'indifferent', 'irritable', 'normal_appetite', 'indifferent', 'neutral', 'self_blaming', 'overwhelmed', 'sometimes_on_edge', 'joyless', 'emotionally_numb', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Low Mood Sometimes', '3. I struggle to concentrate on daily tasks.  Distracted Often', '2. I feel sad or down without a clear reason.  Neutral', '5. I feel physically exhausted even when I get enough rest.  Tired', '6. I avoid social interactions or prefer to be alone. Withdrawn', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  Normal Appetite', '7. I feel hopeless about the future.  Indifferent', '2. I feel sad or down without a clear reason.  Neutral', '12. I feel guilty or blame myself.  Self-Blaming', '13. I have difficulty making decisions.  Overwhelmed', '14. I feel anxious or restless.  Sometimes On Edge', '15. I find it hard to experience joy.  Joyless', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '17. My "emotions" are unpredictable or uncontrollable.  Out of Control', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69701260e-01 4.30298740e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [5.69729285e-01 4.30270715e-01]
+ [6.79719888e-01 3.20280112e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [8.19659185e-01 1.80340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [8.00000000e-02 9.20000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [9.10000000e-01 9.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.2527167398519291
+{"prediction": 0, "probability": 0.2527}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => neutral
+    [2] => distracted_often
+    [3] => emotionally_numb
+    [4] => tired
+    [5] => neutral
+    [6] => pessimistic
+    [7] => irritable
+    [8] => overeating
+    [9] => accepting
+    [10] => occasional_discomfort
+    [11] => accepting_sometimes
+    [12] => overwhelmed
+    [13] => often_restless
+    [14] => joyless
+    [15] => emotionally_numb
+    [16] => unpredictable
+    [17] => distracted_sometimes
+    [18] => insecure
+    [19] => deep_despair
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,neutral,distracted_often,emotionally_numb,tired,neutral,pessimistic,irritable,overeating,accepting,occasional_discomfort,accepting_sometimes,overwhelmed,often_restless,joyless,emotionally_numb,unpredictable,distracted_sometimes,insecure,deep_despair"
+Python output: Debug - Parsed emotion values: ['restless', 'neutral', 'distracted_often', 'emotionally_numb', 'tired', 'neutral', 'pessimistic', 'irritable', 'overeating', 'accepting', 'occasional_discomfort', 'accepting_sometimes', 'overwhelmed', 'often_restless', 'joyless', 'emotionally_numb', 'unpredictable', 'distracted_sometimes', 'insecure', 'deep_despair']
+Debug - Input emotion values: ['restless', 'neutral', 'distracted_often', 'emotionally_numb', 'tired', 'neutral', 'pessimistic', 'irritable', 'overeating', 'accepting', 'occasional_discomfort', 'accepting_sometimes', 'overwhelmed', 'often_restless', 'joyless', 'emotionally_numb', 'unpredictable', 'distracted_sometimes', 'insecure', 'deep_despair']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Neutral', '3. I struggle to concentrate on daily tasks.  Distracted Often', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '5. I feel physically exhausted even when I get enough rest.  Tired', '2. I feel sad or down without a clear reason.  Neutral', '7. I feel hopeless about the future.  Pessimistic', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  Overeating', '10. I have negative thoughts about myself.  Accepting', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Overwhelmed', '14. I feel anxious or restless.  Often Restless', '15. I find it hard to experience joy.  Joyless', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Distracted Sometimes', '19. I feel like I am a burden.  Insecure', '20. Ive had thoughts of self-harm or life being meaningless.  Deep Despair']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.79719888e-01 3.20280112e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.99536604e-01 4.63395681e-04]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [6.00000000e-02 9.40000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [9.70000000e-01 3.00000000e-02]
+ [9.79536604e-01 2.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.40000000e-01 2.60000000e-01]]
+Debug - Avg probability: 0.2172306966414555
+{"status": 0, "probability": 0.2172}
+
+Error: Missing fields in Python output: Debug - Parsed emotion values: ['restless', 'neutral', 'distracted_often', 'emotionally_numb', 'tired', 'neutral', 'pessimistic', 'irritable', 'overeating', 'accepting', 'occasional_discomfort', 'accepting_sometimes', 'overwhelmed', 'often_restless', 'joyless', 'emotionally_numb', 'unpredictable', 'distracted_sometimes', 'insecure', 'deep_despair']
+Debug - Input emotion values: ['restless', 'neutral', 'distracted_often', 'emotionally_numb', 'tired', 'neutral', 'pessimistic', 'irritable', 'overeating', 'accepting', 'occasional_discomfort', 'accepting_sometimes', 'overwhelmed', 'often_restless', 'joyless', 'emotionally_numb', 'unpredictable', 'distracted_sometimes', 'insecure', 'deep_despair']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Neutral', '3. I struggle to concentrate on daily tasks.  Distracted Often', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '5. I feel physically exhausted even when I get enough rest.  Tired', '2. I feel sad or down without a clear reason.  Neutral', '7. I feel hopeless about the future.  Pessimistic', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  Overeating', '10. I have negative thoughts about myself.  Accepting', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Overwhelmed', '14. I feel anxious or restless.  Often Restless', '15. I find it hard to experience joy.  Joyless', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Distracted Sometimes', '19. I feel like I am a burden.  Insecure', '20. Ive had thoughts of self-harm or life being meaningless.  Deep Despair']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.79719888e-01 3.20280112e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.99536604e-01 4.63395681e-04]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [6.00000000e-02 9.40000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [9.70000000e-01 3.00000000e-02]
+ [9.79536604e-01 2.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.40000000e-01 2.60000000e-01]]
+Debug - Avg probability: 0.2172306966414555
+{"status": 0, "probability": 0.2172}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => disinterested
+    [4] => tired
+    [5] => withdrawn
+    [6] => pessimistic
+    [7] => volatile
+    [8] => normal_appetite
+    [9] => worthless
+    [10] => pain_often
+    [11] => self_blaming
+    [12] => overwhelmed
+    [13] => often_restless
+    [14] => neutral
+    [15] => emotionally_numb
+    [16] => unpredictable
+    [17] => distracted_sometimes
+    [18] => burdensome
+    [19] => deep_despair
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,disinterested,tired,withdrawn,pessimistic,volatile,normal_appetite,worthless,pain_often,self_blaming,overwhelmed,often_restless,neutral,emotionally_numb,unpredictable,distracted_sometimes,burdensome,deep_despair"
+Python output: Debug - Parsed emotion values: ['restless', 'often_sad', 'mentally_scattered', 'disinterested', 'tired', 'withdrawn', 'pessimistic', 'volatile', 'normal_appetite', 'worthless', 'pain_often', 'self_blaming', 'overwhelmed', 'often_restless', 'neutral', 'emotionally_numb', 'unpredictable', 'distracted_sometimes', 'burdensome', 'deep_despair']
+Debug - Input emotion values: ['restless', 'often_sad', 'mentally_scattered', 'disinterested', 'tired', 'withdrawn', 'pessimistic', 'volatile', 'normal_appetite', 'worthless', 'pain_often', 'self_blaming', 'overwhelmed', 'often_restless', 'neutral', 'emotionally_numb', 'unpredictable', 'distracted_sometimes', 'burdensome', 'deep_despair']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Often Sad', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Disinterested', '5. I feel physically exhausted even when I get enough rest.  Tired', '6. I avoid social interactions or prefer to be alone. Withdrawn', '7. I feel hopeless about the future.  Pessimistic', '8. I experience sudden mood swings or irritability.  Volatile', '9. I have a decreased or increased appetite.  Normal Appetite', '10. I have negative thoughts about myself.  Worthless', '11. I experience frequent headaches or body pain.  Pain Often', '12. I feel guilty or blame myself.  Self-Blaming', '13. I have difficulty making decisions.  Overwhelmed', '14. I feel anxious or restless.  Often Restless', '2. I feel sad or down without a clear reason.  Neutral', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Distracted Sometimes', '19. I feel like I am a burden.  Burdensome', '20. Ive had thoughts of self-harm or life being meaningless.  Deep Despair']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.70000000e-01 4.30000000e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.79719888e-01 3.20280112e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [7.89570533e-01 2.10429467e-01]
+ [9.29582511e-01 7.04174888e-02]
+ [8.19659185e-01 1.80340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [6.00000000e-02 9.40000000e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [9.80000000e-01 2.00000000e-02]
+ [9.70000000e-01 3.00000000e-02]
+ [9.79536604e-01 2.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.40000000e-01 2.60000000e-01]]
+Debug - Avg probability: 0.21872257199463138
+{"status": 0, "probability": 0.2187}
+
+Error: Missing fields in Python output: Debug - Parsed emotion values: ['restless', 'often_sad', 'mentally_scattered', 'disinterested', 'tired', 'withdrawn', 'pessimistic', 'volatile', 'normal_appetite', 'worthless', 'pain_often', 'self_blaming', 'overwhelmed', 'often_restless', 'neutral', 'emotionally_numb', 'unpredictable', 'distracted_sometimes', 'burdensome', 'deep_despair']
+Debug - Input emotion values: ['restless', 'often_sad', 'mentally_scattered', 'disinterested', 'tired', 'withdrawn', 'pessimistic', 'volatile', 'normal_appetite', 'worthless', 'pain_often', 'self_blaming', 'overwhelmed', 'often_restless', 'neutral', 'emotionally_numb', 'unpredictable', 'distracted_sometimes', 'burdensome', 'deep_despair']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Often Sad', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Disinterested', '5. I feel physically exhausted even when I get enough rest.  Tired', '6. I avoid social interactions or prefer to be alone. Withdrawn', '7. I feel hopeless about the future.  Pessimistic', '8. I experience sudden mood swings or irritability.  Volatile', '9. I have a decreased or increased appetite.  Normal Appetite', '10. I have negative thoughts about myself.  Worthless', '11. I experience frequent headaches or body pain.  Pain Often', '12. I feel guilty or blame myself.  Self-Blaming', '13. I have difficulty making decisions.  Overwhelmed', '14. I feel anxious or restless.  Often Restless', '2. I feel sad or down without a clear reason.  Neutral', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Distracted Sometimes', '19. I feel like I am a burden.  Burdensome', '20. Ive had thoughts of self-harm or life being meaningless.  Deep Despair']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.70000000e-01 4.30000000e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.79719888e-01 3.20280112e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [7.89570533e-01 2.10429467e-01]
+ [9.29582511e-01 7.04174888e-02]
+ [8.19659185e-01 1.80340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [6.00000000e-02 9.40000000e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [9.80000000e-01 2.00000000e-02]
+ [9.70000000e-01 3.00000000e-02]
+ [9.79536604e-01 2.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.40000000e-01 2.60000000e-01]]
+Debug - Avg probability: 0.21872257199463138
+{"status": 0, "probability": 0.2187}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => low_mood
+    [2] => mentally_scattered
+    [3] => disinterested
+    [4] => tired
+    [5] => neutral
+    [6] => indifferent
+    [7] => volatile
+    [8] => normal_appetite
+    [9] => indifferent
+    [10] => pain_often
+    [11] => self_blaming
+    [12] => occasionally_hesitant
+    [13] => constantly_anxious
+    [14] => joyless
+    [15] => emotionally_numb
+    [16] => unpredictable
+    [17] => distracted_sometimes
+    [18] => burdensome
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,low_mood,mentally_scattered,disinterested,tired,neutral,indifferent,volatile,normal_appetite,indifferent,pain_often,self_blaming,occasionally_hesitant,constantly_anxious,joyless,emotionally_numb,unpredictable,distracted_sometimes,burdensome,hopeless_thoughts"
+Python output: Debug - Parsed emotion values: ['restless', 'low_mood', 'mentally_scattered', 'disinterested', 'tired', 'neutral', 'indifferent', 'volatile', 'normal_appetite', 'indifferent', 'pain_often', 'self_blaming', 'occasionally_hesitant', 'constantly_anxious', 'joyless', 'emotionally_numb', 'unpredictable', 'distracted_sometimes', 'burdensome', 'hopeless_thoughts']
+Debug - Input emotion values: ['restless', 'low_mood', 'mentally_scattered', 'disinterested', 'tired', 'neutral', 'indifferent', 'volatile', 'normal_appetite', 'indifferent', 'pain_often', 'self_blaming', 'occasionally_hesitant', 'constantly_anxious', 'joyless', 'emotionally_numb', 'unpredictable', 'distracted_sometimes', 'burdensome', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Low Mood Sometimes', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Disinterested', '5. I feel physically exhausted even when I get enough rest.  Tired', '2. I feel sad or down without a clear reason.  Neutral', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Volatile', '9. I have a decreased or increased appetite.  Normal Appetite', '7. I feel hopeless about the future.  Indifferent', '11. I experience frequent headaches or body pain.  Pain Often', '12. I feel guilty or blame myself.  Self-Blaming', '13. I have difficulty making decisions.  Occasionally Hesitant', '14. I feel anxious or restless.  Constantly Anxious', '15. I find it hard to experience joy.  Joyless', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Distracted Sometimes', '19. I feel like I am a burden.  Burdensome', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69701260e-01 4.30298740e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.79719888e-01 3.20280112e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.29582511e-01 7.04174888e-02]
+ [8.19659185e-01 1.80340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [5.00000000e-02 9.50000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [9.70000000e-01 3.00000000e-02]
+ [9.79536604e-01 2.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.23072407853329344
+{"status": 0, "probability": 0.2307}
+
+Error: Missing fields in Python output: Debug - Parsed emotion values: ['restless', 'low_mood', 'mentally_scattered', 'disinterested', 'tired', 'neutral', 'indifferent', 'volatile', 'normal_appetite', 'indifferent', 'pain_often', 'self_blaming', 'occasionally_hesitant', 'constantly_anxious', 'joyless', 'emotionally_numb', 'unpredictable', 'distracted_sometimes', 'burdensome', 'hopeless_thoughts']
+Debug - Input emotion values: ['restless', 'low_mood', 'mentally_scattered', 'disinterested', 'tired', 'neutral', 'indifferent', 'volatile', 'normal_appetite', 'indifferent', 'pain_often', 'self_blaming', 'occasionally_hesitant', 'constantly_anxious', 'joyless', 'emotionally_numb', 'unpredictable', 'distracted_sometimes', 'burdensome', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Low Mood Sometimes', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Disinterested', '5. I feel physically exhausted even when I get enough rest.  Tired', '2. I feel sad or down without a clear reason.  Neutral', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Volatile', '9. I have a decreased or increased appetite.  Normal Appetite', '7. I feel hopeless about the future.  Indifferent', '11. I experience frequent headaches or body pain.  Pain Often', '12. I feel guilty or blame myself.  Self-Blaming', '13. I have difficulty making decisions.  Occasionally Hesitant', '14. I feel anxious or restless.  Constantly Anxious', '15. I find it hard to experience joy.  Joyless', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Distracted Sometimes', '19. I feel like I am a burden.  Burdensome', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69701260e-01 4.30298740e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.79719888e-01 3.20280112e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.29582511e-01 7.04174888e-02]
+ [8.19659185e-01 1.80340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [5.00000000e-02 9.50000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [9.70000000e-01 3.00000000e-02]
+ [9.79536604e-01 2.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.23072407853329344
+{"status": 0, "probability": 0.2307}
+
+Starting prediction...
+Error: Missing 'answers' parameter.
+Starting prediction...
+Error: Missing 'answers' parameter.
+Starting prediction...
+Error: Missing 'answers' parameter.
+Starting prediction...
+Error: Missing 'answers' parameter.
+Starting prediction...
+Error: Missing 'answers' parameter.
+Starting prediction...
+Received answers: Array
+(
+    [0] => light_sleeper
+    [1] => neutral
+    [2] => distracted_often
+    [3] => disinterested
+    [4] => drained
+    [5] => neutral
+    [6] => cautiously_hopeful
+    [7] => irritable
+    [8] => no_appetite
+    [9] => self_critical
+    [10] => occasional_discomfort
+    [11] => accepting_sometimes
+    [12] => uncertain
+    [13] => sometimes_on_edge
+    [14] => emotionally_flat
+    [15] => detached
+    [16] => unpredictable
+    [17] => distracted_sometimes
+    [18] => insecure
+    [19] => deep_despair
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "light_sleeper,neutral,distracted_often,disinterested,drained,neutral,cautiously_hopeful,irritable,no_appetite,self_critical,occasional_discomfort,accepting_sometimes,uncertain,sometimes_on_edge,emotionally_flat,detached,unpredictable,distracted_sometimes,insecure,deep_despair"
+Python output: Debug - Parsed emotion values: ['light_sleeper', 'neutral', 'distracted_often', 'disinterested', 'drained', 'neutral', 'cautiously_hopeful', 'irritable', 'no_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'uncertain', 'sometimes_on_edge', 'emotionally_flat', 'detached', 'unpredictable', 'distracted_sometimes', 'insecure', 'deep_despair']
+Debug - Input emotion values: ['light_sleeper', 'neutral', 'distracted_often', 'disinterested', 'drained', 'neutral', 'cautiously_hopeful', 'irritable', 'no_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'uncertain', 'sometimes_on_edge', 'emotionally_flat', 'detached', 'unpredictable', 'distracted_sometimes', 'insecure', 'deep_despair']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Light Sleeper', '2. I feel sad or down without a clear reason.  Neutral', '3. I struggle to concentrate on daily tasks.  Distracted Often', '4. I have lost interest in activities I used to enjoy.  Disinterested', '5. I feel physically exhausted even when I get enough rest.  Drained', '2. I feel sad or down without a clear reason.  Neutral', '7. I feel hopeless about the future.  Cautiously Hopeful', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  No Appetite', '10. I have negative thoughts about myself.  Self-Critical', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Sometimes On Edge', '15. I find it hard to experience joy.  Emotionally Flat', '16. I feel detached or numb.  Detached', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Distracted Sometimes', '19. I feel like I am a burden.  Insecure', '20. Ive had thoughts of self-harm or life being meaningless.  Deep Despair']
+All probs: [[9.89672106e-01 1.03278943e-02]
+ [5.69729285e-01 4.30270715e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [7.29142582e-01 2.70857418e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [1.00000000e+00 0.00000000e+00]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [8.00000000e-02 9.20000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [8.39238228e-01 1.60761772e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.79536604e-01 2.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.40000000e-01 2.60000000e-01]]
+Debug - Avg probability: 0.18179087551405465
+{"status": 0, "probability": 0.1818}
+
+Error: Missing fields in Python output: Debug - Parsed emotion values: ['light_sleeper', 'neutral', 'distracted_often', 'disinterested', 'drained', 'neutral', 'cautiously_hopeful', 'irritable', 'no_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'uncertain', 'sometimes_on_edge', 'emotionally_flat', 'detached', 'unpredictable', 'distracted_sometimes', 'insecure', 'deep_despair']
+Debug - Input emotion values: ['light_sleeper', 'neutral', 'distracted_often', 'disinterested', 'drained', 'neutral', 'cautiously_hopeful', 'irritable', 'no_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'uncertain', 'sometimes_on_edge', 'emotionally_flat', 'detached', 'unpredictable', 'distracted_sometimes', 'insecure', 'deep_despair']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Light Sleeper', '2. I feel sad or down without a clear reason.  Neutral', '3. I struggle to concentrate on daily tasks.  Distracted Often', '4. I have lost interest in activities I used to enjoy.  Disinterested', '5. I feel physically exhausted even when I get enough rest.  Drained', '2. I feel sad or down without a clear reason.  Neutral', '7. I feel hopeless about the future.  Cautiously Hopeful', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  No Appetite', '10. I have negative thoughts about myself.  Self-Critical', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Sometimes On Edge', '15. I find it hard to experience joy.  Emotionally Flat', '16. I feel detached or numb.  Detached', '17. My "emotions" are unpredictable or uncontrollable.  Unpredictable', '18. I have trouble remembering things or focusing.  Distracted Sometimes', '19. I feel like I am a burden.  Insecure', '20. Ive had thoughts of self-harm or life being meaningless.  Deep Despair']
+All probs: [[9.89672106e-01 1.03278943e-02]
+ [5.69729285e-01 4.30270715e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [7.29142582e-01 2.70857418e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [1.00000000e+00 0.00000000e+00]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [8.00000000e-02 9.20000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [8.39238228e-01 1.60761772e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.79536604e-01 2.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.40000000e-01 2.60000000e-01]]
+Debug - Avg probability: 0.18179087551405465
+{"status": 0, "probability": 0.1818}
+
+Starting prediction...
+Error: Missing 'answers' parameter.
+Starting prediction...
+Received answers: Array
+(
+    [0] => light_sleeper
+    [1] => often_sad
+    [2] => distracted_often
+    [3] => neutral
+    [4] => drained
+    [5] => prefer_isolation
+    [6] => indifferent
+    [7] => irritable
+    [8] => no_appetite
+    [9] => self_critical
+    [10] => occasional_discomfort
+    [11] => accepting_sometimes
+    [12] => uncertain
+    [13] => constantly_anxious
+    [14] => joyless
+    [15] => indifferent
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => unsure
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "light_sleeper,often_sad,distracted_often,neutral,drained,prefer_isolation,indifferent,irritable,no_appetite,self_critical,occasional_discomfort,accepting_sometimes,uncertain,constantly_anxious,joyless,indifferent,out_of_control,forgetful,unsure,hopeless_thoughts"
+Python output: Debug - Parsed emotion values: ['light_sleeper', 'often_sad', 'distracted_often', 'neutral', 'drained', 'prefer_isolation', 'indifferent', 'irritable', 'no_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'uncertain', 'constantly_anxious', 'joyless', 'indifferent', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Input emotion values: ['light_sleeper', 'often_sad', 'distracted_often', 'neutral', 'drained', 'prefer_isolation', 'indifferent', 'irritable', 'no_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'uncertain', 'constantly_anxious', 'joyless', 'indifferent', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Light Sleeper', '2. I feel sad or down without a clear reason.  Often Sad', '3. I struggle to concentrate on daily tasks.  Distracted Often', '2. I feel sad or down without a clear reason.  Neutral', '5. I feel physically exhausted even when I get enough rest.  Drained', '6. I avoid social interactions or prefer to be alone.  Prefer Isolation', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  No Appetite', '10. I have negative thoughts about myself.  Self-Critical', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Constantly Anxious', '15. I find it hard to experience joy.  Joyless', '7. I feel hopeless about the future.  Indifferent', '17. My "emotions" are unpredictable or uncontrollable.  Out of Control', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[9.89672106e-01 1.03278943e-02]
+ [5.70000000e-01 4.30000000e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [5.69729285e-01 4.30270715e-01]
+ [7.29142582e-01 2.70857418e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [1.00000000e+00 0.00000000e+00]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [5.00000000e-02 9.50000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.10000000e-01 9.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.2022472940304909
+{"status": 0, "probability": 0.2022}
+
+Error: Missing fields in Python output: Debug - Parsed emotion values: ['light_sleeper', 'often_sad', 'distracted_often', 'neutral', 'drained', 'prefer_isolation', 'indifferent', 'irritable', 'no_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'uncertain', 'constantly_anxious', 'joyless', 'indifferent', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Input emotion values: ['light_sleeper', 'often_sad', 'distracted_often', 'neutral', 'drained', 'prefer_isolation', 'indifferent', 'irritable', 'no_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'uncertain', 'constantly_anxious', 'joyless', 'indifferent', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Light Sleeper', '2. I feel sad or down without a clear reason.  Often Sad', '3. I struggle to concentrate on daily tasks.  Distracted Often', '2. I feel sad or down without a clear reason.  Neutral', '5. I feel physically exhausted even when I get enough rest.  Drained', '6. I avoid social interactions or prefer to be alone.  Prefer Isolation', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  No Appetite', '10. I have negative thoughts about myself.  Self-Critical', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Constantly Anxious', '15. I find it hard to experience joy.  Joyless', '7. I feel hopeless about the future.  Indifferent', '17. My "emotions" are unpredictable or uncontrollable.  Out of Control', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[9.89672106e-01 1.03278943e-02]
+ [5.70000000e-01 4.30000000e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [5.69729285e-01 4.30270715e-01]
+ [7.29142582e-01 2.70857418e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [1.00000000e+00 0.00000000e+00]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [5.00000000e-02 9.50000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.10000000e-01 9.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.2022472940304909
+{"status": 0, "probability": 0.2022}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => light_sleeper
+    [1] => often_sad
+    [2] => distracted_often
+    [3] => neutral
+    [4] => drained
+    [5] => prefer_isolation
+    [6] => indifferent
+    [7] => irritable
+    [8] => no_appetite
+    [9] => self_critical
+    [10] => occasional_discomfort
+    [11] => accepting_sometimes
+    [12] => uncertain
+    [13] => constantly_anxious
+    [14] => joyless
+    [15] => indifferent
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => unsure
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "light_sleeper,often_sad,distracted_often,neutral,drained,prefer_isolation,indifferent,irritable,no_appetite,self_critical,occasional_discomfort,accepting_sometimes,uncertain,constantly_anxious,joyless,indifferent,out_of_control,forgetful,unsure,hopeless_thoughts"
+Python output: Debug - Parsed emotion values: ['light_sleeper', 'often_sad', 'distracted_often', 'neutral', 'drained', 'prefer_isolation', 'indifferent', 'irritable', 'no_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'uncertain', 'constantly_anxious', 'joyless', 'indifferent', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Input emotion values: ['light_sleeper', 'often_sad', 'distracted_often', 'neutral', 'drained', 'prefer_isolation', 'indifferent', 'irritable', 'no_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'uncertain', 'constantly_anxious', 'joyless', 'indifferent', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Light Sleeper', '2. I feel sad or down without a clear reason.  Often Sad', '3. I struggle to concentrate on daily tasks.  Distracted Often', '2. I feel sad or down without a clear reason.  Neutral', '5. I feel physically exhausted even when I get enough rest.  Drained', '6. I avoid social interactions or prefer to be alone.  Prefer Isolation', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  No Appetite', '10. I have negative thoughts about myself.  Self-Critical', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Constantly Anxious', '15. I find it hard to experience joy.  Joyless', '7. I feel hopeless about the future.  Indifferent', '17. My "emotions" are unpredictable or uncontrollable.  Out of Control', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[9.89672106e-01 1.03278943e-02]
+ [5.70000000e-01 4.30000000e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [5.69729285e-01 4.30270715e-01]
+ [7.29142582e-01 2.70857418e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [1.00000000e+00 0.00000000e+00]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [5.00000000e-02 9.50000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.10000000e-01 9.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.2022472940304909
+{"status": 0, "probability": 0.2022}
+
+Error: Missing fields in Python output: Debug - Parsed emotion values: ['light_sleeper', 'often_sad', 'distracted_often', 'neutral', 'drained', 'prefer_isolation', 'indifferent', 'irritable', 'no_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'uncertain', 'constantly_anxious', 'joyless', 'indifferent', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Input emotion values: ['light_sleeper', 'often_sad', 'distracted_often', 'neutral', 'drained', 'prefer_isolation', 'indifferent', 'irritable', 'no_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'uncertain', 'constantly_anxious', 'joyless', 'indifferent', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Light Sleeper', '2. I feel sad or down without a clear reason.  Often Sad', '3. I struggle to concentrate on daily tasks.  Distracted Often', '2. I feel sad or down without a clear reason.  Neutral', '5. I feel physically exhausted even when I get enough rest.  Drained', '6. I avoid social interactions or prefer to be alone.  Prefer Isolation', '7. I feel hopeless about the future.  Indifferent', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  No Appetite', '10. I have negative thoughts about myself.  Self-Critical', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Constantly Anxious', '15. I find it hard to experience joy.  Joyless', '7. I feel hopeless about the future.  Indifferent', '17. My "emotions" are unpredictable or uncontrollable.  Out of Control', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[9.89672106e-01 1.03278943e-02]
+ [5.70000000e-01 4.30000000e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [5.69729285e-01 4.30270715e-01]
+ [7.29142582e-01 2.70857418e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [1.00000000e+00 0.00000000e+00]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [5.00000000e-02 9.50000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.10000000e-01 9.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.2022472940304909
+{"status": 0, "probability": 0.2022}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => sometimes_rested
+    [1] => low_mood
+    [2] => mentally_scattered
+    [3] => disinterested
+    [4] => drained
+    [5] => open_to_others
+    [6] => pessimistic
+    [7] => volatile
+    [8] => normal_appetite
+    [9] => indifferent
+    [10] => pain_often
+    [11] => accepting_sometimes
+    [12] => uncertain
+    [13] => sometimes_on_edge
+    [14] => emotionally_flat
+    [15] => detached
+    [16] => occasionally_intense
+    [17] => forgetful
+    [18] => burdensome
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "sometimes_rested,low_mood,mentally_scattered,disinterested,drained,open_to_others,pessimistic,volatile,normal_appetite,indifferent,pain_often,accepting_sometimes,uncertain,sometimes_on_edge,emotionally_flat,detached,occasionally_intense,forgetful,burdensome,hopeless_thoughts"
+Python output: Debug - Parsed emotion values: ['sometimes_rested', 'low_mood', 'mentally_scattered', 'disinterested', 'drained', 'open_to_others', 'pessimistic', 'volatile', 'normal_appetite', 'indifferent', 'pain_often', 'accepting_sometimes', 'uncertain', 'sometimes_on_edge', 'emotionally_flat', 'detached', 'occasionally_intense', 'forgetful', 'burdensome', 'hopeless_thoughts']
+Debug - Input emotion values: ['sometimes_rested', 'low_mood', 'mentally_scattered', 'disinterested', 'drained', 'open_to_others', 'pessimistic', 'volatile', 'normal_appetite', 'indifferent', 'pain_often', 'accepting_sometimes', 'uncertain', 'sometimes_on_edge', 'emotionally_flat', 'detached', 'occasionally_intense', 'forgetful', 'burdensome', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Occasionally Rested', '2. I feel sad or down without a clear reason.  Low Mood Sometimes', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Disinterested', '5. I feel physically exhausted even when I get enough rest.  Drained', '6. I avoid social interactions or prefer to be alone.  Open to Others', '7. I feel hopeless about the future.  Pessimistic', '8. I experience sudden mood swings or irritability.  Volatile', '9. I have a decreased or increased appetite.  Normal Appetite', '7. I feel hopeless about the future.  Indifferent', '11. I experience frequent headaches or body pain.  Pain Often', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Sometimes On Edge', '15. I find it hard to experience joy.  Emotionally Flat', '16. I feel detached or numb.  Detached', '17. My "emotions" are unpredictable or uncontrollable.  Occasionally Intense', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Burdensome', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[9.89672106e-01 1.03278943e-02]
+ [5.69701260e-01 4.30298740e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [7.29142582e-01 2.70857418e-01]
+ [9.30000000e-01 7.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.29582511e-01 7.04174888e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [8.00000000e-02 9.20000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [8.39238228e-01 1.60761772e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.17729389142993937
+{"status": 0, "probability": 0.1773}
+
+Error: Missing fields in Python output: Debug - Parsed emotion values: ['sometimes_rested', 'low_mood', 'mentally_scattered', 'disinterested', 'drained', 'open_to_others', 'pessimistic', 'volatile', 'normal_appetite', 'indifferent', 'pain_often', 'accepting_sometimes', 'uncertain', 'sometimes_on_edge', 'emotionally_flat', 'detached', 'occasionally_intense', 'forgetful', 'burdensome', 'hopeless_thoughts']
+Debug - Input emotion values: ['sometimes_rested', 'low_mood', 'mentally_scattered', 'disinterested', 'drained', 'open_to_others', 'pessimistic', 'volatile', 'normal_appetite', 'indifferent', 'pain_often', 'accepting_sometimes', 'uncertain', 'sometimes_on_edge', 'emotionally_flat', 'detached', 'occasionally_intense', 'forgetful', 'burdensome', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Occasionally Rested', '2. I feel sad or down without a clear reason.  Low Mood Sometimes', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Disinterested', '5. I feel physically exhausted even when I get enough rest.  Drained', '6. I avoid social interactions or prefer to be alone.  Open to Others', '7. I feel hopeless about the future.  Pessimistic', '8. I experience sudden mood swings or irritability.  Volatile', '9. I have a decreased or increased appetite.  Normal Appetite', '7. I feel hopeless about the future.  Indifferent', '11. I experience frequent headaches or body pain.  Pain Often', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Sometimes On Edge', '15. I find it hard to experience joy.  Emotionally Flat', '16. I feel detached or numb.  Detached', '17. My "emotions" are unpredictable or uncontrollable.  Occasionally Intense', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Burdensome', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[9.89672106e-01 1.03278943e-02]
+ [5.69701260e-01 4.30298740e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [7.29142582e-01 2.70857418e-01]
+ [9.30000000e-01 7.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.29582511e-01 7.04174888e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [8.00000000e-02 9.20000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [8.39238228e-01 1.60761772e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.17729389142993937
+{"status": 0, "probability": 0.1773}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => sometimes_rested
+    [1] => low_mood
+    [2] => mentally_scattered
+    [3] => disinterested
+    [4] => tired
+    [5] => neutral
+    [6] => hopeless
+    [7] => irritable
+    [8] => overeating
+    [9] => self_critical
+    [10] => pain_often
+    [11] => accepting_sometimes
+    [12] => uncertain
+    [13] => sometimes_on_edge
+    [14] => occasionally_happy
+    [15] => emotionally_numb
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => unsure
+    [19] => holding_hope
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "sometimes_rested,low_mood,mentally_scattered,disinterested,tired,neutral,hopeless,irritable,overeating,self_critical,pain_often,accepting_sometimes,uncertain,sometimes_on_edge,occasionally_happy,emotionally_numb,out_of_control,forgetful,unsure,holding_hope"
+Python output: Debug - Parsed emotion values: ['sometimes_rested', 'low_mood', 'mentally_scattered', 'disinterested', 'tired', 'neutral', 'hopeless', 'irritable', 'overeating', 'self_critical', 'pain_often', 'accepting_sometimes', 'uncertain', 'sometimes_on_edge', 'occasionally_happy', 'emotionally_numb', 'out_of_control', 'forgetful', 'unsure', 'holding_hope']
+Debug - Input emotion values: ['sometimes_rested', 'low_mood', 'mentally_scattered', 'disinterested', 'tired', 'neutral', 'hopeless', 'irritable', 'overeating', 'self_critical', 'pain_often', 'accepting_sometimes', 'uncertain', 'sometimes_on_edge', 'occasionally_happy', 'emotionally_numb', 'out_of_control', 'forgetful', 'unsure', 'holding_hope']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Occasionally Rested', '2. I feel sad or down without a clear reason.  Low Mood Sometimes', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Disinterested', '5. I feel physically exhausted even when I get enough rest.  Tired', '2. I feel sad or down without a clear reason.  Neutral', '7. I feel hopeless about the future.  Hopeless', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  Overeating', '10. I have negative thoughts about myself.  Self-Critical', '11. I experience frequent headaches or body pain.  Pain Often', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Sometimes On Edge', '15. I find it hard to experience joy.  Occasionally Happy', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '17. My "emotions" are unpredictable or uncontrollable.  Out of Control', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Holding Hope']
+All probs: [[9.89672106e-01 1.03278943e-02]
+ [5.69701260e-01 4.30298740e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.79719888e-01 3.20280112e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.99536604e-01 4.63395681e-04]
+ [7.89570533e-01 2.10429467e-01]
+ [9.29582511e-01 7.04174888e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [8.00000000e-02 9.20000000e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [9.10000000e-01 9.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.20000000e-01 2.80000000e-01]]
+Debug - Avg probability: 0.18175390370130534
+{"status": 0, "probability": 0.1818}
+
+Error: Missing fields in Python output: Debug - Parsed emotion values: ['sometimes_rested', 'low_mood', 'mentally_scattered', 'disinterested', 'tired', 'neutral', 'hopeless', 'irritable', 'overeating', 'self_critical', 'pain_often', 'accepting_sometimes', 'uncertain', 'sometimes_on_edge', 'occasionally_happy', 'emotionally_numb', 'out_of_control', 'forgetful', 'unsure', 'holding_hope']
+Debug - Input emotion values: ['sometimes_rested', 'low_mood', 'mentally_scattered', 'disinterested', 'tired', 'neutral', 'hopeless', 'irritable', 'overeating', 'self_critical', 'pain_often', 'accepting_sometimes', 'uncertain', 'sometimes_on_edge', 'occasionally_happy', 'emotionally_numb', 'out_of_control', 'forgetful', 'unsure', 'holding_hope']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Occasionally Rested', '2. I feel sad or down without a clear reason.  Low Mood Sometimes', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Disinterested', '5. I feel physically exhausted even when I get enough rest.  Tired', '2. I feel sad or down without a clear reason.  Neutral', '7. I feel hopeless about the future.  Hopeless', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  Overeating', '10. I have negative thoughts about myself.  Self-Critical', '11. I experience frequent headaches or body pain.  Pain Often', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Uncertain', '14. I feel anxious or restless.  Sometimes On Edge', '15. I find it hard to experience joy.  Occasionally Happy', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '17. My "emotions" are unpredictable or uncontrollable.  Out of Control', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Holding Hope']
+All probs: [[9.89672106e-01 1.03278943e-02]
+ [5.69701260e-01 4.30298740e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [6.79719888e-01 3.20280112e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.99536604e-01 4.63395681e-04]
+ [7.89570533e-01 2.10429467e-01]
+ [9.29582511e-01 7.04174888e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [8.00000000e-02 9.20000000e-01]
+ [9.60000000e-01 4.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [9.10000000e-01 9.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.20000000e-01 2.80000000e-01]]
+Debug - Avg probability: 0.18175390370130534
+{"status": 0, "probability": 0.1818}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => uplifted
+    [2] => mentally_scattered
+    [3] => excited_about_life
+    [4] => tired
+    [5] => open_to_others
+    [6] => hopeless
+    [7] => irritable
+    [8] => overeating
+    [9] => accepting
+    [10] => occasional_discomfort
+    [11] => empowered
+    [12] => occasionally_hesitant
+    [13] => constantly_anxious
+    [14] => joyless
+    [15] => indifferent
+    [16] => occasionally_intense
+    [17] => attentive
+    [18] => valued_and_loved
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,uplifted,mentally_scattered,excited_about_life,tired,open_to_others,hopeless,irritable,overeating,accepting,occasional_discomfort,empowered,occasionally_hesitant,constantly_anxious,joyless,indifferent,occasionally_intense,attentive,valued_and_loved,hopeless_thoughts"
+Python output: Debug - Parsed emotion values: ['restless', 'uplifted', 'mentally_scattered', 'excited_about_life', 'tired', 'open_to_others', 'hopeless', 'irritable', 'overeating', 'accepting', 'occasional_discomfort', 'empowered', 'occasionally_hesitant', 'constantly_anxious', 'joyless', 'indifferent', 'occasionally_intense', 'attentive', 'valued_and_loved', 'hopeless_thoughts']
+Debug - Input emotion values: ['restless', 'uplifted', 'mentally_scattered', 'excited_about_life', 'tired', 'open_to_others', 'hopeless', 'irritable', 'overeating', 'accepting', 'occasional_discomfort', 'empowered', 'occasionally_hesitant', 'constantly_anxious', 'joyless', 'indifferent', 'occasionally_intense', 'attentive', 'valued_and_loved', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Emotionally Uplifted', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Excited About Life', '5. I feel physically exhausted even when I get enough rest.  Tired', '6. I avoid social interactions or prefer to be alone.  Open to Others', '7. I feel hopeless about the future.  Hopeless', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  Overeating', '10. I have negative thoughts about myself.  Accepting', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Empowered', '13. I have difficulty making decisions.  Occasionally Hesitant', '14. I feel anxious or restless.  Constantly Anxious', '15. I find it hard to experience joy.  Joyless', '7. I feel hopeless about the future.  Indifferent', '17. My "emotions" are unpredictable or uncontrollable.  Occasionally Intense', '18. I have trouble remembering things or focusing.  Attentive', '19. I feel like I am a burden.  Valued and Loved', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [7.90000000e-01 2.10000000e-01]
+ [6.79719888e-01 3.20280112e-01]
+ [9.30000000e-01 7.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.99536604e-01 4.63395681e-04]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [8.19659185e-01 1.80340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [5.00000000e-02 9.50000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.50000000e-01 1.50000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.2292252037768833
+{"status": 0, "probability": 0.2292}
+
+Error: Missing fields in Python output: Debug - Parsed emotion values: ['restless', 'uplifted', 'mentally_scattered', 'excited_about_life', 'tired', 'open_to_others', 'hopeless', 'irritable', 'overeating', 'accepting', 'occasional_discomfort', 'empowered', 'occasionally_hesitant', 'constantly_anxious', 'joyless', 'indifferent', 'occasionally_intense', 'attentive', 'valued_and_loved', 'hopeless_thoughts']
+Debug - Input emotion values: ['restless', 'uplifted', 'mentally_scattered', 'excited_about_life', 'tired', 'open_to_others', 'hopeless', 'irritable', 'overeating', 'accepting', 'occasional_discomfort', 'empowered', 'occasionally_hesitant', 'constantly_anxious', 'joyless', 'indifferent', 'occasionally_intense', 'attentive', 'valued_and_loved', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Emotionally Uplifted', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Excited About Life', '5. I feel physically exhausted even when I get enough rest.  Tired', '6. I avoid social interactions or prefer to be alone.  Open to Others', '7. I feel hopeless about the future.  Hopeless', '8. I experience sudden mood swings or irritability.  Irritable', '9. I have a decreased or increased appetite.  Overeating', '10. I have negative thoughts about myself.  Accepting', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Empowered', '13. I have difficulty making decisions.  Occasionally Hesitant', '14. I feel anxious or restless.  Constantly Anxious', '15. I find it hard to experience joy.  Joyless', '7. I feel hopeless about the future.  Indifferent', '17. My "emotions" are unpredictable or uncontrollable.  Occasionally Intense', '18. I have trouble remembering things or focusing.  Attentive', '19. I feel like I am a burden.  Valued and Loved', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.69729285e-01 4.30270715e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [7.90000000e-01 2.10000000e-01]
+ [6.79719888e-01 3.20280112e-01]
+ [9.30000000e-01 7.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.99536604e-01 4.63395681e-04]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [8.19659185e-01 1.80340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [5.00000000e-02 9.50000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.50000000e-01 1.50000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.2292252037768833
+{"status": 0, "probability": 0.2292}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => emotionally_numb
+    [4] => drained
+    [5] => withdrawn
+    [6] => pessimistic
+    [7] => volatile
+    [8] => normal_appetite
+    [9] => self_critical
+    [10] => occasional_discomfort
+    [11] => accepting_sometimes
+    [12] => occasionally_hesitant
+    [13] => constantly_anxious
+    [14] => joyless
+    [15] => deeply_engaged
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => unsure
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,emotionally_numb,drained,withdrawn,pessimistic,volatile,normal_appetite,self_critical,occasional_discomfort,accepting_sometimes,occasionally_hesitant,constantly_anxious,joyless,deeply_engaged,out_of_control,forgetful,unsure,hopeless_thoughts"
+Python output: Debug - Input emotion values: ['restless', 'often_sad', 'mentally_scattered', 'emotionally_numb', 'drained', 'withdrawn', 'pessimistic', 'volatile', 'normal_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'occasionally_hesitant', 'constantly_anxious', 'joyless', 'deeply_engaged', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Often Sad', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '5. I feel physically exhausted even when I get enough rest.  Drained', '6. I avoid social interactions or prefer to be alone. Withdrawn', '7. I feel hopeless about the future.  Pessimistic', '8. I experience sudden mood swings or irritability.  Volatile', '9. I have a decreased or increased appetite.  Normal Appetite', '10. I have negative thoughts about myself.  Self-Critical', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Occasionally Hesitant', '14. I feel anxious or restless.  Constantly Anxious', '15. I find it hard to experience joy.  Joyless', '16. I feel detached or numb.  Deeply Engaged', '17. My "emotions" are unpredictable or uncontrollable.  Out of Control', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.70000000e-01 4.30000000e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [7.29142582e-01 2.70857418e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [5.00000000e-02 9.50000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [8.39238228e-01 1.60761772e-01]
+ [9.10000000e-01 9.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.2062786219572185
+{"status": 0, "probability": 0.2063}
+
+Error: Missing fields in Python output: Debug - Input emotion values: ['restless', 'often_sad', 'mentally_scattered', 'emotionally_numb', 'drained', 'withdrawn', 'pessimistic', 'volatile', 'normal_appetite', 'self_critical', 'occasional_discomfort', 'accepting_sometimes', 'occasionally_hesitant', 'constantly_anxious', 'joyless', 'deeply_engaged', 'out_of_control', 'forgetful', 'unsure', 'hopeless_thoughts']
+Debug - Generated input texts: ['1. I have trouble sleeping or staying asleep.  Restless', '2. I feel sad or down without a clear reason.  Often Sad', '3. I struggle to concentrate on daily tasks.  Mentally Scattered', '4. I have lost interest in activities I used to enjoy.  Emotionally Numb', '5. I feel physically exhausted even when I get enough rest.  Drained', '6. I avoid social interactions or prefer to be alone. Withdrawn', '7. I feel hopeless about the future.  Pessimistic', '8. I experience sudden mood swings or irritability.  Volatile', '9. I have a decreased or increased appetite.  Normal Appetite', '10. I have negative thoughts about myself.  Self-Critical', '11. I experience frequent headaches or body pain.  Occasional Discomfort', '12. I feel guilty or blame myself.  Accepting Sometimes', '13. I have difficulty making decisions.  Occasionally Hesitant', '14. I feel anxious or restless.  Constantly Anxious', '15. I find it hard to experience joy.  Joyless', '16. I feel detached or numb.  Deeply Engaged', '17. My "emotions" are unpredictable or uncontrollable.  Out of Control', '18. I have trouble remembering things or focusing.  Forgetful', '19. I feel like I am a burden.  Unsure', '20. Ive had thoughts of self-harm or life being meaningless.  Hopeless Thoughts']
+All probs: [[2.10000000e-01 7.90000000e-01]
+ [5.70000000e-01 4.30000000e-01]
+ [9.90000000e-01 1.00000000e-02]
+ [9.80000000e-01 2.00000000e-02]
+ [7.29142582e-01 2.70857418e-01]
+ [9.50000000e-01 5.00000000e-02]
+ [5.60000000e-01 4.40000000e-01]
+ [9.99203442e-01 7.96558124e-04]
+ [9.79536604e-01 2.04633957e-02]
+ [7.89570533e-01 2.10429467e-01]
+ [9.69690733e-01 3.03092666e-02]
+ [7.99659185e-01 2.00340815e-01]
+ [9.99010508e-01 9.89492126e-04]
+ [5.00000000e-02 9.50000000e-01]
+ [9.70000000e-01 3.00000000e-02]
+ [8.39238228e-01 1.60761772e-01]
+ [9.10000000e-01 9.00000000e-02]
+ [9.89536604e-01 1.04633957e-02]
+ [8.70000000e-01 1.30000000e-01]
+ [7.19839142e-01 2.80160858e-01]]
+Debug - Avg probability: 0.2062786219572185
+{"status": 0, "probability": 0.2063}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => sometimes_rested
+    [1] => low_mood
+    [2] => occasionally_distracted
+    [3] => neutral
+    [4] => sometimes_weary
+    [5] => prefer_isolation
+    [6] => indifferent
+    [7] => volatile
+    [8] => normal_appetite
+    [9] => self_critical
+    [10] => occasional_discomfort
+    [11] => accepting_sometimes
+    [12] => occasionally_hesitant
+    [13] => sometimes_on_edge
+    [14] => neutral
+    [15] => indifferent
+    [16] => unpredictable
+    [17] => forgetful
+    [18] => valued_and_loved
+    [19] => deep_despair
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "sometimes_rested,low_mood,occasionally_distracted,neutral,sometimes_weary,prefer_isolation,indifferent,volatile,normal_appetite,self_critical,occasional_discomfort,accepting_sometimes,occasionally_hesitant,sometimes_on_edge,neutral,indifferent,unpredictable,forgetful,valued_and_loved,deep_despair"
+Python output: {"status": 0, "probability": 0.2188}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => sometimes_rested
+    [1] => low_mood
+    [2] => mentally_scattered
+    [3] => disinterested
+    [4] => sometimes_weary
+    [5] => open_to_others
+    [6] => indifferent
+    [7] => irritable
+    [8] => no_appetite
+    [9] => self_critical
+    [10] => neutral
+    [11] => empowered
+    [12] => calm_decision_maker
+    [13] => sometimes_on_edge
+    [14] => joyless
+    [15] => emotionally_numb
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => unsure
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "sometimes_rested,low_mood,mentally_scattered,disinterested,sometimes_weary,open_to_others,indifferent,irritable,no_appetite,self_critical,neutral,empowered,calm_decision_maker,sometimes_on_edge,joyless,emotionally_numb,out_of_control,forgetful,unsure,hopeless_thoughts"
+Python output: {"status": 0, "probability": 0.1957}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => low_mood
+    [2] => occasionally_distracted
+    [3] => mildly_engaged
+    [4] => drained
+    [5] => prefer_isolation
+    [6] => indifferent
+    [7] => occasionally_moody
+    [8] => normal_appetite
+    [9] => worthless
+    [10] => occasional_discomfort
+    [11] => self_forgiving
+    [12] => occasionally_hesitant
+    [13] => often_restless
+    [14] => emotionally_flat
+    [15] => detached
+    [16] => occasionally_intense
+    [17] => distracted_sometimes
+    [18] => appreciated_sometimes
+    [19] => sometimes_numb
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,low_mood,occasionally_distracted,mildly_engaged,drained,prefer_isolation,indifferent,occasionally_moody,normal_appetite,worthless,occasional_discomfort,self_forgiving,occasionally_hesitant,often_restless,emotionally_flat,detached,occasionally_intense,distracted_sometimes,appreciated_sometimes,sometimes_numb"
+Python output: {"status": 0, "probability": 0.2008}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => low_mood
+    [2] => occasionally_distracted
+    [3] => mildly_engaged
+    [4] => drained
+    [5] => prefer_isolation
+    [6] => indifferent
+    [7] => occasionally_moody
+    [8] => normal_appetite
+    [9] => worthless
+    [10] => occasional_discomfort
+    [11] => self_forgiving
+    [12] => occasionally_hesitant
+    [13] => often_restless
+    [14] => emotionally_flat
+    [15] => detached
+    [16] => occasionally_intense
+    [17] => distracted_sometimes
+    [18] => appreciated_sometimes
+    [19] => sometimes_numb
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,low_mood,occasionally_distracted,mildly_engaged,drained,prefer_isolation,indifferent,occasionally_moody,normal_appetite,worthless,occasional_discomfort,self_forgiving,occasionally_hesitant,often_restless,emotionally_flat,detached,occasionally_intense,distracted_sometimes,appreciated_sometimes,sometimes_numb"
+Python output: {"status": 0, "probability": 0.2008}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => usually_rested
+    [1] => neutral
+    [2] => distracted_often
+    [3] => emotionally_numb
+    [4] => tired
+    [5] => neutral
+    [6] => optimistic
+    [7] => emotionally_balanced
+    [8] => overeating
+    [9] => self_critical
+    [10] => pain_often
+    [11] => accepting_sometimes
+    [12] => uncertain
+    [13] => constantly_anxious
+    [14] => neutral
+    [15] => connected
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => appreciated_sometimes
+    [19] => holding_hope
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "usually_rested,neutral,distracted_often,emotionally_numb,tired,neutral,optimistic,emotionally_balanced,overeating,self_critical,pain_often,accepting_sometimes,uncertain,constantly_anxious,neutral,connected,out_of_control,forgetful,appreciated_sometimes,holding_hope"
+Python output: {"status": 0, "probability": 0.2123}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => usually_rested
+    [1] => neutral
+    [2] => distracted_often
+    [3] => emotionally_numb
+    [4] => tired
+    [5] => neutral
+    [6] => optimistic
+    [7] => emotionally_balanced
+    [8] => overeating
+    [9] => self_critical
+    [10] => pain_often
+    [11] => accepting_sometimes
+    [12] => uncertain
+    [13] => constantly_anxious
+    [14] => neutral
+    [15] => connected
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => appreciated_sometimes
+    [19] => holding_hope
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "usually_rested,neutral,distracted_often,emotionally_numb,tired,neutral,optimistic,emotionally_balanced,overeating,self_critical,pain_often,accepting_sometimes,uncertain,constantly_anxious,neutral,connected,out_of_control,forgetful,appreciated_sometimes,holding_hope"
+Python output: {"status": 0, "probability": 0.2123}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => emotionally_numb
+    [4] => drained
+    [5] => withdrawn
+    [6] => pessimistic
+    [7] => volatile
+    [8] => no_appetite
+    [9] => worthless
+    [10] => pain_often
+    [11] => guilt_ridden
+    [12] => overwhelmed
+    [13] => constantly_anxious
+    [14] => emotionally_flat
+    [15] => emotionally_numb
+    [16] => out_of_control
+    [17] => foggy
+    [18] => burdensome
+    [19] => deep_despair
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,emotionally_numb,drained,withdrawn,pessimistic,volatile,no_appetite,worthless,pain_often,guilt_ridden,overwhelmed,constantly_anxious,emotionally_flat,emotionally_numb,out_of_control,foggy,burdensome,deep_despair"
+Python output: {"status": 0, "probability": 0.1982}
+

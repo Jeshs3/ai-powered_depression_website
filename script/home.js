@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
          }
         
 
-          tr.innerHTML += `<td>${res.score}</td>`;
+          tr.innerHTML += `<td>${res.total}</td>`;
           tr.innerHTML += `<td>${res.status}</td>`;
           tr.innerHTML += `<td>${res.probability ?? "Pending Analysis"}</td>`;
           tr.innerHTML += `<td><button class="delete-btn" onclick="deleteData('${res.userid}')">Delete</button></td>`;

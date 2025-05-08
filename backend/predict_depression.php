@@ -8,11 +8,15 @@ header('Content-Type: application/json');
 file_put_contents("debug_log.txt", "Starting prediction...\n", FILE_APPEND);
 
 try {
-    if (!isset($_POST['answers'])) {
+    $rawData = file_get_contents("php://input");
+    $data = json_decode($rawData, true);
+
+    if (!isset($data['answers'])) {
         throw new Exception("Missing 'answers' parameter.");
     }
 
-    $answers = $_POST['answers'];
+    $answers = $data['answers'];
+
     file_put_contents("debug_log.txt", "Received answers: " . print_r($answers, true) . "\n", FILE_APPEND);
 
     // Convert answers array into comma-separated string
@@ -32,18 +36,18 @@ try {
 
     file_put_contents("debug_log.txt", "Python output: $output\n", FILE_APPEND);
 
-    // Parse output
-    $parts = explode(",", trim($output));
-    if (count($parts) !== 2) {
-        throw new Exception("Unexpected output format from Python: $output");
+    // Expecting pure JSON output
+    $result = json_decode(trim($output), true);
+
+    if (!isset($result['status']) || !isset($result['probability'])) {
+        throw new Exception("Missing fields in Python output: $output");
     }
 
-    list($prediction, $probability) = $parts;
-
     echo json_encode([
-        "prediction" => intval($prediction),
-        "probability" => floatval($probability)
+        "status" => $result['status'], 
+        "probability" => floatval($result['probability'])
     ]);
+
 } catch (Exception $e) {
     file_put_contents("debug_log.txt", "Error: " . $e->getMessage() . "\n", FILE_APPEND);
     http_response_code(500);

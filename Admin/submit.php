@@ -10,6 +10,10 @@ if (!isset($_SESSION['id'])) {
 
 $userId = $_SESSION['id'];
 
+# Fetch the JSON data from the request body
+$raw = file_get_contents("php://input");
+$data = json_decode($raw, true);
+
 // Fetch the POST data
 $answers = $_POST['answers'] ?? null;
 $score = $_POST['score'] ?? null;

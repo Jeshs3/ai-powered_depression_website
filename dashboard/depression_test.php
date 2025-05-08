@@ -93,6 +93,16 @@
                 <iframe src="https://www.youtube.com/embed/zzfREEPbUsA"></iframe>
             </div>
         </div>
+        <!-- Simple popup modal -->
+            <div id="resultPopup" style="display:none; position:fixed; top:20%; left:50%; transform:translateX(-50%);
+            background:#2196F3; padding:20px; border:1px solid #ccc; box-shadow:0 4px 10px rgba(0,0,0,0.3); z-index:1000;">
+                <h3>Prediction Result</h3>
+                <p id="popupStatus"></p>
+                <p id="popupProbability"></p>
+                <p id="popupAdvice" style="color:red;"></p>
+                <button onclick="document.getElementById('resultPopup').style.display='none';">Close</button>
+        </div>
+
     </div>
     <script src="../script/header.js"></script>
     <script src="../script/test.js"></script>
