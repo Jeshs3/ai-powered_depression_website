@@ -20,8 +20,8 @@
     
     <select id="statusFilter" onchange="filterTable()">
       <option value="">All Status</option>
-      <option value="1">Depressed</option>
-      <option value="0">Not Depressed</option>
+      <option value="1">High</option>
+      <option value="0">Low</option>
     </select>
   </div>
 
@@ -31,6 +31,7 @@
         <tbody id="tableBody"></tbody>
       </table>
     </div>
+    <div id="paginationControls" class="pagination-controls"></div>
   </div>
   <script src="../script/home.js"></script>
 </body>

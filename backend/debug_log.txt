@@ -2068,3 +2068,255 @@ Received answers: Array
 Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,emotionally_numb,drained,withdrawn,pessimistic,volatile,no_appetite,worthless,pain_often,guilt_ridden,overwhelmed,constantly_anxious,emotionally_flat,emotionally_numb,out_of_control,foggy,burdensome,deep_despair"
 Python output: {"status": 0, "probability": 0.1982}
 
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => low_mood
+    [2] => occasionally_distracted
+    [3] => disinterested
+    [4] => drained
+    [5] => prefer_isolation
+    [6] => indifferent
+    [7] => occasionally_moody
+    [8] => normal_appetite
+    [9] => worthless
+    [10] => neutral
+    [11] => self_forgiving
+    [12] => confident_decider
+    [13] => mostly_calm
+    [14] => neutral
+    [15] => detached
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => unsure
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,low_mood,occasionally_distracted,disinterested,drained,prefer_isolation,indifferent,occasionally_moody,normal_appetite,worthless,neutral,self_forgiving,confident_decider,mostly_calm,neutral,detached,out_of_control,forgetful,unsure,hopeless_thoughts"
+Python output: {"status": 0, "probability": 0.2443}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => low_mood
+    [2] => occasionally_distracted
+    [3] => disinterested
+    [4] => drained
+    [5] => prefer_isolation
+    [6] => indifferent
+    [7] => occasionally_moody
+    [8] => normal_appetite
+    [9] => worthless
+    [10] => neutral
+    [11] => self_forgiving
+    [12] => confident_decider
+    [13] => mostly_calm
+    [14] => neutral
+    [15] => detached
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => unsure
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,low_mood,occasionally_distracted,disinterested,drained,prefer_isolation,indifferent,occasionally_moody,normal_appetite,worthless,neutral,self_forgiving,confident_decider,mostly_calm,neutral,detached,out_of_control,forgetful,unsure,hopeless_thoughts"
+Python output: {"status": 0, "probability": 0.2443}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => low_mood
+    [2] => occasionally_distracted
+    [3] => disinterested
+    [4] => drained
+    [5] => prefer_isolation
+    [6] => indifferent
+    [7] => occasionally_moody
+    [8] => normal_appetite
+    [9] => worthless
+    [10] => neutral
+    [11] => self_forgiving
+    [12] => confident_decider
+    [13] => mostly_calm
+    [14] => neutral
+    [15] => detached
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => unsure
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,low_mood,occasionally_distracted,disinterested,drained,prefer_isolation,indifferent,occasionally_moody,normal_appetite,worthless,neutral,self_forgiving,confident_decider,mostly_calm,neutral,detached,out_of_control,forgetful,unsure,hopeless_thoughts"
+Python output: {"status": 0, "probability": 0.2443}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => emotionally_numb
+    [4] => drained
+    [5] => withdrawn
+    [6] => hopeless
+    [7] => volatile
+    [8] => no_appetite
+    [9] => worthless
+    [10] => pain_often
+    [11] => guilt_ridden
+    [12] => overwhelmed
+    [13] => often_restless
+    [14] => emotionally_flat
+    [15] => emotionally_numb
+    [16] => out_of_control
+    [17] => foggy
+    [18] => unsure
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,emotionally_numb,drained,withdrawn,hopeless,volatile,no_appetite,worthless,pain_often,guilt_ridden,overwhelmed,often_restless,emotionally_flat,emotionally_numb,out_of_control,foggy,unsure,hopeless_thoughts"
+Python output: {"status": 0, "probability": 0.1987}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => emotionally_numb
+    [4] => drained
+    [5] => withdrawn
+    [6] => hopeless
+    [7] => volatile
+    [8] => no_appetite
+    [9] => worthless
+    [10] => pain_often
+    [11] => guilt_ridden
+    [12] => overwhelmed
+    [13] => often_restless
+    [14] => emotionally_flat
+    [15] => emotionally_numb
+    [16] => out_of_control
+    [17] => foggy
+    [18] => unsure
+    [19] => deep_despair
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,emotionally_numb,drained,withdrawn,hopeless,volatile,no_appetite,worthless,pain_often,guilt_ridden,overwhelmed,often_restless,emotionally_flat,emotionally_numb,out_of_control,foggy,unsure,deep_despair"
+Python output: {"status": 0, "probability": 0.1977}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => emotionally_numb
+    [4] => drained
+    [5] => withdrawn
+    [6] => hopeless
+    [7] => volatile
+    [8] => no_appetite
+    [9] => worthless
+    [10] => pain_often
+    [11] => guilt_ridden
+    [12] => overwhelmed
+    [13] => often_restless
+    [14] => emotionally_flat
+    [15] => emotionally_numb
+    [16] => out_of_control
+    [17] => foggy
+    [18] => unsure
+    [19] => holding_hope
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,emotionally_numb,drained,withdrawn,hopeless,volatile,no_appetite,worthless,pain_often,guilt_ridden,overwhelmed,often_restless,emotionally_flat,emotionally_numb,out_of_control,foggy,unsure,holding_hope"
+Python output: {"status": 0, "probability": 0.1987}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => emotionally_numb
+    [4] => drained
+    [5] => withdrawn
+    [6] => indifferent
+    [7] => occasionally_moody
+    [8] => losing_weight
+    [9] => accepting
+    [10] => neutral
+    [11] => guilt_ridden
+    [12] => uncertain
+    [13] => sometimes_on_edge
+    [14] => occasionally_happy
+    [15] => deeply_engaged
+    [16] => occasionally_intense
+    [17] => forgetful
+    [18] => burdensome
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,emotionally_numb,drained,withdrawn,indifferent,occasionally_moody,losing_weight,accepting,neutral,guilt_ridden,uncertain,sometimes_on_edge,occasionally_happy,deeply_engaged,occasionally_intense,forgetful,burdensome,hopeless_thoughts"
+Python output: {"status": 0, "probability": 0.2203}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => often_sad
+    [2] => mentally_scattered
+    [3] => emotionally_numb
+    [4] => drained
+    [5] => withdrawn
+    [6] => indifferent
+    [7] => occasionally_moody
+    [8] => losing_weight
+    [9] => accepting
+    [10] => neutral
+    [11] => guilt_ridden
+    [12] => uncertain
+    [13] => sometimes_on_edge
+    [14] => occasionally_happy
+    [15] => deeply_engaged
+    [16] => occasionally_intense
+    [17] => forgetful
+    [18] => burdensome
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,often_sad,mentally_scattered,emotionally_numb,drained,withdrawn,indifferent,occasionally_moody,losing_weight,accepting,neutral,guilt_ridden,uncertain,sometimes_on_edge,occasionally_happy,deeply_engaged,occasionally_intense,forgetful,burdensome,hopeless_thoughts"
+Python output: {"status": 0, "probability": 0.2203}
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => low_mood
+    [2] => mentally_scattered
+    [3] => mildly_engaged
+    [4] => drained
+    [5] => prefer_isolation
+    [6] => indifferent
+    [7] => irritable
+    [8] => losing_weight
+    [9] => worthless
+    [10] => neutral
+    [11] => self_forgiving
+    [12] => uncertain
+    [13] => constantly_anxious
+    [14] => joyless
+    [15] => indifferent
+    [16] => out_of_control
+    [17] => forgetful
+    [18] => unsure
+    [19] => deep_despair
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,low_mood,mentally_scattered,mildly_engaged,drained,prefer_isolation,indifferent,irritable,losing_weight,worthless,neutral,self_forgiving,uncertain,constantly_anxious,joyless,indifferent,out_of_control,forgetful,unsure,deep_despair"
+Python output: {"status": 0, "probability": 0.2372}
+

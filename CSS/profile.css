@@ -25,7 +25,7 @@
 }
 
 .status-circle {
-    background-color: #3498db;
+    background-color: #12c912;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-weight: 600;
@@ -46,6 +46,7 @@
 
 .user-details {
     display: grid;
+    flex-wrap: wrap; 
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     color: #2d3748;
@@ -58,16 +59,22 @@
     border-radius: 6px;
     display: flex;
     justify-content: space-between;
+    word-wrap: break-word;  
+    white-space: normal;      
+    overflow-wrap: break-word; 
+    max-width: 100%;
 }
 
 .user-details strong {
     color: #4a5568;
     margin-right: 1rem;
+    word-wrap: break-word; 
 }
 
 .user-details span {
     color: #718096;
     text-align: right;
+    word-wrap: break-word; 
 }
 .back-button {
     display: inline-flex;

@@ -6,7 +6,7 @@
         $user_id = $_GET['id'];
     
         // Join with users table to fetch the full name by concatenating first, middle, and last names
-        $sql = "SELECT 
+        /*$sql = "SELECT 
                     s.*, 
                     u.first_name, u.middle_name, u.last_name, 
                     u.email, u.gender, u.year, u.course, u.dob,
@@ -14,14 +14,22 @@
                 FROM user_submissions s
                 JOIN users u ON s.user_id = u.id
                 WHERE s.user_id = ?";
+        
+        echo $sql; 
     
-        $stmt = $dbhandle->prepare($sql);
+        //$stmt = $dbhandle->prepare($sql);
+        
         if (!$stmt) {
-            die("Prepare failed: " . $dbhandle->error);
+             die("Execute failed: " . $stmt->error);
         }
     
         $stmt->bind_param("i", $user_id);
         $stmt->execute();
+
+        if (!$stmt->execute()) {
+            die("Execute failed: " . $stmt->error);
+        }
+
         $result = $stmt->get_result();
     
         if ($result->num_rows == 1) {
@@ -29,9 +37,27 @@
         } else {
             echo "No record found.";
             exit();
+        }*/
+
+        $sql = "SELECT 
+            s.*, 
+            u.first_name, u.middle_name, u.last_name, 
+            u.email, u.gender, u.year, u.course, u.dob,
+            CONCAT(u.first_name, ' ', u.middle_name, ' ', u.last_name) AS full_name
+        FROM user_submissions s
+        JOIN users u ON s.user_id = u.id
+        WHERE s.user_id = 33";  // Directly using the ID instead of the placeholder
+
+        $result = $dbhandle->query($sql);
+
+        if ($result && $result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+        } else {
+            echo "No record found.";
         }
+
     
-        $stmt->close();
+        $result->close();
     } else {
         echo "No ID provided.";
         exit();

@@ -47,7 +47,7 @@
 
         <div id="loading-spinner" style="display: none;">
             <div class="spinner"></div>
-            <p>Loading user data...</p>
+            <p>Predicting...</p>
         </div>
         <!--Question Cards-->
         <div id="question-card">

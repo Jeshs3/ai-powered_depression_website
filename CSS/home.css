@@ -130,3 +130,18 @@ th {
 .delete-btn:hover {
   background-color: #c0392b;
 }
+
+
+.pagination-controls {
+  margin-top: 15px;
+  text-align: center;
+}
+.pagination-controls button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.pagination-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
