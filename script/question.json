@@ -52,7 +52,7 @@
     {
         "text": "6. I avoid social interactions or prefer to be alone.",
         "emotions": [
-            { "label": "🚪Withdrawn", "value": "withdrawn" },
+            { "label": "🚪 Withdrawn", "value": "withdrawn" },
             { "label": "😶 Prefer Isolation", "value": "prefer_isolation" },
             { "label": "😐 Neutral", "value": "neutral" },
             { "label": "🤝 Open to Others", "value": "open_to_others" },

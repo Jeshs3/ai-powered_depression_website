@@ -1,18 +1,27 @@
 let user_id = null;
 let userLoaded = false;
+
+function showLoading() {
+    $("#loading-overlay").show();
+}
+
+function hideLoading() {
+    $("#loading-overlay").hide();
+}
+
 function loadUserData() {
     return new Promise((resolve, reject) => {
         if (userLoaded) {
             resolve(user_id);
         } else {
             $("#loading-spinner").show();
-            $.get('/BANOL6/Admin/get_user.php', function (data) {
+            $.get('/BANOL6/database/get_user.php', function (data) {
                 user_id = data;
                 userLoaded = true;
-                $("#loading-spinner").hide();
+                hideLoading();
                 resolve(user_id);
             }).fail(function () {
-                $("#loading-spinner").hide();
+                hideLoading();
                 alert("Failed to fetch user ID. Please refresh the page.");
                 reject("User fetch failed");
             });
@@ -38,25 +47,27 @@ window.submitAnswers = async function () {
 
         const emotionValues = mappedAnswer.map(obj => obj.value);
 
-        $("#loading-spinner").show();
+        showLoading();
 
-        const response = await $.ajax({
-            url: "/BANOL6/backend/predict_depression.php",
-            type: "POST",
-            contentType: "application/json",
-            data: JSON.stringify({
-                user_id: user_id,
-                answers: emotionValues
-            })
+        //FastAPI request
+        const response = await fetch("http://127.0.0.1:8000/prediction", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ answers: emotionValues })
         });
 
-        const prediction = response.status;
-        const probability = response.probability;
+        if (!response.ok) {
+            throw new Error("FastAPI request failed: " + (await response.text()));
+        }
+
+        const result = await response.json();
+        const prediction = result.status;
+        const probability = result.probability;
         let status = prediction === 1 ? "high" : "low";
 
-        // Submit to DB
+        // Submit results to your DB via PHP
         await $.ajax({
-            url: "/BANOL6/Admin/submit.php",
+            url: "/BANOL6/database/submit.php",
             type: "POST",
             data: {
                 date: new Date().toISOString().split('T')[0],
@@ -64,23 +75,36 @@ window.submitAnswers = async function () {
                 score: score,
                 status: status,
                 probability: probability,
+                user_id: user_id
             }
         });
 
-        $("#loading-spinner").hide();
-        document.getElementById("popupStatus").textContent = "Status: " + (status === "high" ? "Depressed" : "Not Depressed");
-        document.getElementById("popupProbability").textContent = "Probability Score: " + probability;
+        hideLoading();
+        let advice = "";
         if (status === "high" && probability >= 0.7) {
-            document.getElementById("popupAdvice").textContent = "Please seek help from a mental health professional.";
-        } else {
-            document.getElementById("popupAdvice").textContent = "";
+        advice = "⚠️ Please seek help from a mental health professional.";
         }
-        document.getElementById("resultPopup").style.display = "block";
+
+        Swal.fire({
+        title: "Prediction Result",
+        html: `
+            <p><b>Status:</b> ${status === "high" ? "Depressed" : "Not Depressed"}</p>
+            <p><b>Probability Score:</b> ${probability}</p>
+            ${advice ? `<p style="color:red;">${advice}</p>` : ""}
+        `,
+        icon: status === "high" ? "warning" : "info",
+        confirmButtonText: "OK"
+        });
+
 
     } catch (error) {
-        $("#loading-spinner").hide();
-        console.error("Submission error details:", error.responseText || error);
-        alert("Error occurred during submission.");
+        hideLoading();
+        console.error("Submission error details:", error);
+        Swal.fire({
+            icon: 'error',
+            title: 'Submission Failed',
+            text: 'Error occurred during submission. Please try again.',
+            confirmButtonColor: '#d33'
+        });
     }
 }
-

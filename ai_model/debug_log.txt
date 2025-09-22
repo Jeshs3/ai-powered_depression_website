@@ -2320,3 +2320,207 @@ Received answers: Array
 Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,low_mood,mentally_scattered,mildly_engaged,drained,prefer_isolation,indifferent,irritable,losing_weight,worthless,neutral,self_forgiving,uncertain,constantly_anxious,joyless,indifferent,out_of_control,forgetful,unsure,deep_despair"
 Python output: {"status": 0, "probability": 0.2372}
 
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => uplifted
+    [2] => distracted_often
+    [3] => disinterested
+    [4] => tired
+    [5] => prefer_isolation
+    [6] => pessimistic
+    [7] => irritable
+    [8] => normal_appetite
+    [9] => self_critical
+    [10] => occasional_discomfort
+    [11] => self_blaming
+    [12] => uncertain
+    [13] => often_restless
+    [14] => joyless
+    [15] => detached
+    [16] => unpredictable
+    [17] => forgetful
+    [18] => insecure
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,uplifted,distracted_often,disinterested,tired,prefer_isolation,pessimistic,irritable,normal_appetite,self_critical,occasional_discomfort,self_blaming,uncertain,often_restless,joyless,detached,unpredictable,forgetful,insecure,hopeless_thoughts"
+Python output: 1,0.7900
+
+Error: Missing fields in Python output: 1,0.7900
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => uplifted
+    [2] => distracted_often
+    [3] => disinterested
+    [4] => tired
+    [5] => prefer_isolation
+    [6] => pessimistic
+    [7] => irritable
+    [8] => normal_appetite
+    [9] => self_critical
+    [10] => occasional_discomfort
+    [11] => self_blaming
+    [12] => uncertain
+    [13] => often_restless
+    [14] => joyless
+    [15] => detached
+    [16] => unpredictable
+    [17] => forgetful
+    [18] => insecure
+    [19] => seeking_meaning
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,uplifted,distracted_often,disinterested,tired,prefer_isolation,pessimistic,irritable,normal_appetite,self_critical,occasional_discomfort,self_blaming,uncertain,often_restless,joyless,detached,unpredictable,forgetful,insecure,seeking_meaning"
+Python output: 1,0.7900
+
+Error: Missing fields in Python output: 1,0.7900
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => restless
+    [1] => uplifted
+    [2] => distracted_often
+    [3] => disinterested
+    [4] => tired
+    [5] => prefer_isolation
+    [6] => pessimistic
+    [7] => irritable
+    [8] => normal_appetite
+    [9] => self_critical
+    [10] => occasional_discomfort
+    [11] => self_blaming
+    [12] => uncertain
+    [13] => often_restless
+    [14] => joyless
+    [15] => detached
+    [16] => unpredictable
+    [17] => forgetful
+    [18] => insecure
+    [19] => seeking_meaning
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "restless,uplifted,distracted_often,disinterested,tired,prefer_isolation,pessimistic,irritable,normal_appetite,self_critical,occasional_discomfort,self_blaming,uncertain,often_restless,joyless,detached,unpredictable,forgetful,insecure,seeking_meaning"
+Python output: 1,0.7900
+
+Error: Missing fields in Python output: 1,0.7900
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => light_sleeper
+    [1] => low_mood
+    [2] => distracted_often
+    [3] => disinterested
+    [4] => tired
+    [5] => prefer_isolation
+    [6] => pessimistic
+    [7] => irritable
+    [8] => normal_appetite
+    [9] => self_critical
+    [10] => occasional_discomfort
+    [11] => self_blaming
+    [12] => uncertain
+    [13] => often_restless
+    [14] => joyless
+    [15] => detached
+    [16] => unpredictable
+    [17] => forgetful
+    [18] => insecure
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "light_sleeper,low_mood,distracted_often,disinterested,tired,prefer_isolation,pessimistic,irritable,normal_appetite,self_critical,occasional_discomfort,self_blaming,uncertain,often_restless,joyless,detached,unpredictable,forgetful,insecure,hopeless_thoughts"
+Python output: 0,0.0103
+
+Error: Missing fields in Python output: 0,0.0103
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => sometimes_rested
+    [1] => neutral
+    [2] => occasionally_distracted
+    [3] => neutral
+    [4] => sometimes_weary
+    [5] => neutral
+    [6] => indifferent
+    [7] => occasionally_moody
+    [8] => overeating
+    [9] => indifferent
+    [10] => neutral
+    [11] => accepting_sometimes
+    [12] => occasionally_hesitant
+    [13] => sometimes_on_edge
+    [14] => neutral
+    [15] => indifferent
+    [16] => occasionally_intense
+    [17] => distracted_sometimes
+    [18] => unsure
+    [19] => sometimes_numb
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "sometimes_rested,neutral,occasionally_distracted,neutral,sometimes_weary,neutral,indifferent,occasionally_moody,overeating,indifferent,neutral,accepting_sometimes,occasionally_hesitant,sometimes_on_edge,neutral,indifferent,occasionally_intense,distracted_sometimes,unsure,sometimes_numb"
+Python output: 0,0.0103
+
+Error: Missing fields in Python output: 0,0.0103
+
+Starting prediction...
+Received answers: Array
+(
+    [0] => light_sleeper
+    [1] => low_mood
+    [2] => distracted_often
+    [3] => disinterested
+    [4] => sometimes_weary
+    [5] => open_to_others
+    [6] => indifferent
+    [7] => irritable
+    [8] => no_appetite
+    [9] => self_compassionate
+    [10] => mostly_comfortable
+    [11] => accepting_sometimes
+    [12] => uncertain
+    [13] => constantly_anxious
+    [14] => joyless
+    [15] => indifferent
+    [16] => peacefully_balanced
+    [17] => attentive
+    [18] => unsure
+    [19] => hopeless_thoughts
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "light_sleeper,low_mood,distracted_often,disinterested,sometimes_weary,open_to_others,indifferent,irritable,no_appetite,self_compassionate,mostly_comfortable,accepting_sometimes,uncertain,constantly_anxious,joyless,indifferent,peacefully_balanced,attentive,unsure,hopeless_thoughts"
+Error: Python script failed or didn't return any output.
+Starting prediction...
+Received answers: Array
+(
+    [0] => usually_rested
+    [1] => generally_fine
+    [2] => focused
+    [3] => mildly_engaged
+    [4] => energetic
+    [5] => neutral
+    [6] => indifferent
+    [7] => occasionally_moody
+    [8] => normal_appetite
+    [9] => self_critical
+    [10] => pain_often
+    [11] => self_forgiving
+    [12] => occasionally_hesitant
+    [13] => mostly_calm
+    [14] => joyless
+    [15] => emotionally_numb
+    [16] => occasionally_intense
+    [17] => attentive
+    [18] => valued_and_loved
+    [19] => sometimes_numb
+)
+
+Running command: "C:\Users\haiti\AppData\Local\Programs\Python\Python313\python.exe" "C:\xampp\htdocs\banol6\backend\model.py" "usually_rested,generally_fine,focused,mildly_engaged,energetic,neutral,indifferent,occasionally_moody,normal_appetite,self_critical,pain_often,self_forgiving,occasionally_hesitant,mostly_calm,joyless,emotionally_numb,occasionally_intense,attentive,valued_and_loved,sometimes_numb"
+Error: Python script failed or didn't return any output.

@@ -1,4 +1,4 @@
-<?php include 'admin_header.php'; ?>
+<?php include 'header.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">

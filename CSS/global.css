@@ -1,0 +1,38 @@
+/* global.css */
+
+/* Root color variables (easy to reuse everywhere) */
+:root {
+  --navbar-gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  --navbar-link-hover: rgba(255, 255, 255, 0.2);
+  --navbar-active: #ffffff;
+}
+
+/* Navbar header styling */
+.navbar-header {
+  background: var(--navbar-gradient) !important;
+}
+
+/* Optional: style nav links */
+.navbar-header .nav-link {
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.navbar-header .nav-link:hover {
+  background: var(--navbar-link-hover);
+  border-radius: 6px;
+}
+
+.navbar-header .nav-link.active {
+  color: var(--navbar-active);
+  font-weight: 600;
+}
+
+.icon-md {
+  font-size: 20px;
+}
+
+.icon-lg {
+  font-size: 28px;
+}
+

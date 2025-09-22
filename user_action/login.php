@@ -1,38 +1,66 @@
 <?php
-    session_start();
-    include "../Admin/connection.php";
+session_start();
+include "../database/connection.php";
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-    
-        // Prepare SQL statement to prevent SQL Injection
-        $stmt = $dbhandle->prepare("SELECT id, first_name, password FROM users WHERE email = ?");
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // --- DEFAULT ADMIN SETUP ---
+    $defaultAdminEmail = "admin@gmail.com";
+    $defaultAdminPassword = "admin123";
+
+    if ($email === $defaultAdminEmail && $password === $defaultAdminPassword) {
+
+        // Check if admin already exists
+        $stmt = $dbhandle->prepare("SELECT admin_id FROM admins WHERE email = ?");
         $stmt->bind_param("s", $email);
         $stmt->execute();
         $stmt->store_result();
-    
-        if ($stmt->num_rows > 0) {
-            $stmt->bind_result($id, $first_name, $hashed_password);
-            $stmt->fetch();
-    
-            // Verify password
-            if (password_verify($password, $hashed_password)) {
-                $_SESSION['id'] = $id;
-                $_SESSION['first_name'] = $first_name;
-                
-                header("Location: ../dashboard/depression_test.php"); // Redirect to dashboard
-                exit();
-            } else {
-                $error = "Invalid email or password.";
-            }
-        } else {
-            $error = "User not found.";
+
+        if ($stmt->num_rows === 0) {
+            // Insert default admin for the first time
+            $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+            $stmtInsert = $dbhandle->prepare("INSERT INTO admins (email, password, username) VALUES (?, ?, ?)");
+            $username = "Admin";
+            $stmtInsert->bind_param("sss", $email, $hashedPassword, $username);
+            $stmtInsert->execute();
+            $stmtInsert->close();
         }
-    
         $stmt->close();
-        $dbhandle->close();
+
+        // Log the admin in
+        $_SESSION['admin'] = true;
+        $_SESSION['first_name'] = "Admin";
+        header("Location: ../Admin/home.php");
+        exit();
     }
+
+    // --- NORMAL USER LOGIN ---
+    $stmtUser = $dbhandle->prepare("SELECT id, first_name, password FROM users WHERE email = ?");
+    $stmtUser->bind_param("s", $email);
+    $stmtUser->execute();
+    $stmtUser->store_result();
+
+    if ($stmtUser->num_rows > 0) {
+        $stmtUser->bind_result($id, $first_name, $hashed_password);
+        $stmtUser->fetch();
+
+        if (password_verify($password, $hashed_password)) {
+            $_SESSION['id'] = $id;
+            $_SESSION['first_name'] = $first_name;
+            header("Location: ../user/depression_test.php");
+            exit();
+        } else {
+            $error = "Invalid email or password.";
+        }
+    } else {
+        $error = "User not found.";
+    }
+
+    $stmtUser->close();
+    $dbhandle->close();
+}
 ?>
 
 <!DOCTYPE html>
@@ -40,33 +68,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login | Mental Health Tracker</title>
     <link rel="stylesheet" href="../CSS/login.css">
 </head>
 <body>
-    <div class="main-container">
-        <div class="title">
-            <h2>Welcome Back!</h2>
-            <p>Log in to view your previous assessment results and track your mental health journey.</p>
-        </div>
-        <div class="login-container">
-            <h1>Log In to View Your Results</h1>
-            <?php if (isset($error)) echo "<p style='color: red;'>$error</p>"; ?>
-            <form method="post">
+    <div class="login-wrapper">
+        <div class="login-card">
+            <div class="login-header">
+                <h2>Welcome Back!</h2>
+                <p>Log in to view your assessment results and track your mental health journey.</p>
+            </div>
+
+            <form method="post" class="login-form">
+                <h3>Log In</h3>
+                <?php if (isset($error)) echo "<p class='error-msg'>$error</p>"; ?>
+
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" name ="email" id="email" required>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
                 </div>
+
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" name = "password" id="password" required minlength = "4" maxlength="8">
+                    <input type="password" name="password" id="password" placeholder="4-8 characters" required minlength="4" maxlength="8">
                 </div>
-                <input type="submit" value="Login" >
-                <div class="links">
-                    <a href="google.com">Sign in with Google?</a>
-                    <a href="registration.php">Register an account</a>
-                    <br>
-                    <a href="../dashboard/depression_test.php">Try Depression Test again</a>
+
+                <button type="submit" class="login-btn">Login</button>
+
+                <div class="login-links">
+                    <a href="../user/registration.php">Register an account</a>
+                    <a href="../user/depression_test.php">Try Depression Test again</a>
                 </div>
             </form>
         </div>

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("statusFilter").addEventListener("change", filterTable);
 
     // Fetch the data
-    fetch('/BANOL6/Admin/get_data.php')
+    fetch('/BANOL6/database/get_data.php')
         .then(res => res.json())
         .then(data => {
             responses = data;
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Deleting user data
     window.deleteData = function (userId) {
         if (confirm(`Are you sure you want to delete data for user ID ${userId}?`)) {
-            fetch('Admin/delete_data.php', {
+            fetch('../database/action.php?action=delete_submission', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

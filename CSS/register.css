@@ -1,105 +1,125 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #2196F3;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
 
 .main-container {
-    display: flex;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    align-items: center;
+  max-width: 1100px;
+  width: 100%;
 }
 
-.title {
-    flex: 1;
-    padding: 40px;
-    border-radius: 10px;
-    color: rgb(32, 68, 81);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.intro-box {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.container {
-    flex: 2;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.intro-box h2 {
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-.container h2 {
-    color: #333;
-    margin-bottom: 20px;
+.intro-box p {
+  color: #fff;
+  font-size: 15px;
 }
 
-form div {
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
+.options-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
 }
 
-label {
-    width: 150px;
-    margin-right: 10px;
-    color: #555;
+.form-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="date"],
-select {
-    flex: 1;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
+.form-card h3 {
+  margin-bottom: 15px;
+  color: #2b3a67;
 }
 
-.gender-group {
-    display: flex;
-    gap: 20px;
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
-.gender-option {
-    display: flex;
-    align-items: center;
+.form-grid input,
+.form-grid select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s;
 }
 
-input[type="radio"] {
-    margin-right: 5px;
+.form-grid input:focus,
+.form-grid select:focus {
+  border-color: #2b3a67;
 }
 
-input[type="submit"] {
-    background-color: #2196F3;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-input[type="submit"]:hover {
-    background-color: #1976D2;
+.primary-btn {
+  background: #2575fc;
+  color: white;
 }
 
-a {
-    display: block;
-    margin: 15px 0;
-    color: #2196F3;
-    text-decoration: none;
+.primary-btn:hover {
+  background: #1f2b4d;
 }
 
-@media (max-width: 768px) {
-    .main-container {
-        flex-direction: column;
-    }
-    
-    .title {
-        width: 100%;
-        text-align: center;
-    }
+.secondary-btn {
+  background: #e0e6f1;
+  color: #2b3a67;
+}
+
+.secondary-btn:hover {
+  background: #d0d8e6;
+}
+
+.alt-link {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.alt-link a {
+  color: #2b3a67;
+  font-weight: bold;
+}
+
+.guest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.guest .note {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #888;
 }
