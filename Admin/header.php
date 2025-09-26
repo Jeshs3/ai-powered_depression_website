@@ -10,6 +10,7 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../CSS/global.css">
 </head>
 <body>
@@ -41,19 +42,22 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="../Admin/response_list.php" 
+               class="nav-link <?= $currentpg == '../Admin/response_list.php' ? 'active' : '' ?>" 
+               data-bs-toggle="tooltip" data-bs-placement="bottom" title="RESPONSES">
+              <i class="fa-solid fa-clipboard-list me-2 icon-md"></i>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="../Admin/user_list.php" 
                class="nav-link <?= $currentpg == '../Admin/user_list.php' ? 'active' : '' ?>" 
                data-bs-toggle="tooltip" data-bs-placement="bottom" title="RECORDS">
               <i class="fa-solid fa-table-list me-2 icon-md"></i>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="../Admin/analytics.php" 
-               class="nav-link <?= $currentpg == '../Admin/analytics.php' ? 'active' : '' ?>" 
-               data-bs-toggle="tooltip" data-bs-placement="bottom" title="NOTIFICATIONS">
-              <i class="fa-solid fa-bell me-2 icon-md"></i>
-            </a>
-          </li>
+          <!-- this is notification bell -->
+           <?php include '../components/bell.php'; ?>
+           
           <li class="nav-item">
             <a href="../components/setting.php"
                class="nav-link <?= $currentpg == '../components/setting.php' ? 'active' : '' ?>" 
@@ -62,11 +66,11 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="../user_action/logout.php" 
-               class="nav-link" 
-               data-bs-toggle="tooltip" data-bs-placement="bottom" title="LOGOUT">
-              <i class="fa-solid fa-right-from-bracket me-2 icon-md"></i>
-            </a>
+            <form action="../user_action/logout.php" method="POST" class="d-inline">
+              <button type="submit" class="btn nav-link border-0 bg-transparent" data-bs-toggle="tooltip" title="LOGOUT">
+                <i class="fa-solid fa-right-from-bracket me-2 icon-md"></i>
+              </button>
+            </form>
           </li>
         </ul>
       </div>

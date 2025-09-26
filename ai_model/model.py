@@ -14,7 +14,7 @@ model = joblib.load(model_path)
 # Load JSON file containing the questions and emotions
 # with open('../script/question.json', 'r', encoding='utf-8') as f:
 #     emotion_data = json.load(f)
-with open(os.path.join(BASE_DIR, "../script/question.json"), 'r', encoding='utf-8') as f:
+with open(os.path.join(BASE_DIR, "../dataset/question.json"), 'r', encoding='utf-8') as f:
     emotion_data = json.load(f)
 
 def predict_depression(emotion_values):

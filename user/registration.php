@@ -2,9 +2,11 @@
 session_start();
 include "../database/connection.php";
 
+// Include notification functions
+include "../Admin/notification.php"; // the file where you defined all notify* functions
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['guest_mode'])) {
-        // Guest mode → skip registration, go straight to test
         $_SESSION['guest'] = true;
         header("Location: depression_test.php");
         exit();
@@ -67,6 +69,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['id'] = $dbhandle->insert_id;
         $_SESSION['email'] = $email;
         $_SESSION['status'] = "registered";
+
+        // --- Notification for admin ---
+        // Get default admin ID or you can loop through all admins if multiple
+        $adminResult = $dbhandle->query("SELECT admin_id FROM admins LIMIT 1");
+        $adminId = null;
+        if ($adminResult && $adminResult->num_rows > 0) {
+            $adminId = $adminResult->fetch_assoc()['admin_id'];
+        }
+
+        if ($adminId) {
+            // Use the modular notification function
+            notifyNewUser($dbhandle, $email, date('Y-m-d H:i:s'), $adminId);
+        }
+
         header("Location: depression_test.php");
         exit();
     } else {
@@ -75,15 +91,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             error_log("DB Error: " . $stmt->error);
             $_SESSION['status'] = "error";
+
+            // Optional: notify admin of DB error
+            $adminResult = $dbhandle->query("SELECT admin_id FROM admins LIMIT 1");
+            $adminId = null;
+            if ($adminResult && $adminResult->num_rows > 0) {
+                $adminId = $adminResult->fetch_assoc()['admin_id'];
+            }
+            if ($adminId) {
+                notifyDatabaseError($dbhandle, "Error inserting new user $email: " . $stmt->error, $adminId);
+            }
         }
         header("Location: registration.php");
         exit();
     }
 
-
     $stmt->close();
     $dbhandle->close();
-
 }
 ?>
 

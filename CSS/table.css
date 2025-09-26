@@ -1,0 +1,109 @@
+/* 🔹 General Table Styling */
+/* ensure actions column doesn't collapse, and buttons are vertically centered */
+#likertTable td.text-center > .d-flex { justify-content: center; align-items: center; }
+
+/* reduce button group gaps for a tighter modern look */
+#likertTable .btn-group .btn { padding: .28rem .6rem; font-size: .82rem; }
+
+/* sweetalert popup scroll */
+.swal2-popup.answers-popup { max-height: 70vh; overflow-y: auto; }
+
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+}
+
+.table thead th {
+  background: #f8f9fa;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #495057;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody tr {
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.table tbody tr:hover {
+  background: #f1f5f9;
+  transform: scale(1.01);
+}
+
+/* 🔹 Status Badges */
+.status-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35em 0.75em;
+  border-radius: 50rem;
+}
+
+.status-high {
+  background-color: #ffe2e6;
+  color: #d6336c;
+  border: 1px solid #f5c2c7;
+}
+
+.status-low {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+/* 🔹 Buttons in Action Cells */
+td .btn {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.4rem;
+  transition: all 0.2s;
+}
+
+td .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Empty State */
+.table tbody td.text-muted {
+  font-size: 0.9rem;
+  font-style: italic;
+  background: #f9fafb;
+}
+
+.long-actions {
+  min-width: 200px; /* keep the Actions column wide enough */
+}
+
+/* Profile button */
+.btn-profile {
+  background: #f0f4ff;
+  color: #3b5998;
+  border: 1px solid #d0dcf7;
+}
+.btn-profile:hover {
+  background: #3b5998;
+  color: #fff;
+}
+
+/* Delete button */
+.btn-delete {
+  background: #fff5f5;
+  color: #d9534f;
+  border: 1px solid #f5c2c0;
+}
+.btn-delete:hover {
+  background: #d9534f;
+  color: #fff;
+}
+
+.answers-popup {
+  font-size: 14px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.answers-popup .border-bottom:last-child {
+  border-bottom: none !important;
+}

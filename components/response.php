@@ -5,14 +5,12 @@
       <h5 class="mb-0">User Responses</h5>
       <div class="row g-2">
         <!-- Search -->
-        <div class="col-md-4">
-          <div class="input-group input-group-sm">
-            <span class="input-group-text"><i class="fas fa-search"></i></span>
-            <input type="text" id="searchInput" class="form-control" 
-                  placeholder="Search by User ID or Name..." 
-                  onkeyup="filterTable()">
-          </div>
-        </div>
+        <?php
+            $inputId = 'shortSearch';
+            $placeholder = 'Search users...';
+            include 'filter.php';
+        ?>
+
 
         <!-- Status Filter -->
         <div class="col-md-4">
@@ -35,25 +33,15 @@
       </div>
     </div>
 
-    <!-- Table -->
     <div class="table-responsive">
-      <table id="likertTable" class="table table-striped table-hover align-middle mb-0">
+      <table id="likertTable" class="table table-striped table-hover align-middle mb-0" data-mode="short">
         <thead class="table-light" id="tableHead">
-          <tr>
-            <th>User ID</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Gender</th>
-            <th>Test Date</th>
-            <th>Score</th>
-            <th>Status</th>
-            <th>Actions</th>
-          </tr>
         </thead>
         <tbody id="tableBody">
-          <!-- Rows injected dynamically by response.js -->
+          <!-- Rows injected dynamically -->
         </tbody>
       </table>
+    </div>
     </div>
 
     <!-- Pagination -->
@@ -66,5 +54,6 @@
 <!-- Bootstrap & FontAwesome -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/table.css">
 
 <script src="../script/response.js"></script>

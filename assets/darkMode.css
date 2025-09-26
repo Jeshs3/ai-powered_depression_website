@@ -1,0 +1,49 @@
+/* Body background and text */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #e0e0e0;
+}
+
+/* Cards */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #fff;
+  border-color: #333;
+}
+
+body.dark-mode p.text-muted,
+body.dark-mode h6,
+body.dark-mode label,
+body.dark-mode h1,
+body.dark-mode small
+{
+  color: #e0e0e0 !important; /* light text for dark background */
+}
+
+/* Inputs, selects, textareas */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #444;
+}
+
+/* Buttons */
+body.dark-mode .btn-outline-primary {
+  color: #fff;
+  border-color: #888;
+}
+body.dark-mode .btn-outline-primary:hover {
+  background-color: #333;
+}
+
+/* Smooth transition */
+body,
+body .card,
+body input,
+body select,
+body textarea,
+body .btn-outline-primary {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}

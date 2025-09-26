@@ -13,22 +13,34 @@ function loadUserData() {
     return new Promise((resolve, reject) => {
         if (userLoaded) {
             resolve(user_id);
-        } else {
-            $("#loading-spinner").show();
-            $.get('/BANOL6/database/get_user.php', function (data) {
+            return;
+        }
+
+        // Show loading spinner
+        $("#loading-spinner").show();
+
+        $.get('/BANOL6/database/action.php?action=check_session')
+            .done(function(data, textStatus, jqXHR) {
                 user_id = data;
                 userLoaded = true;
-                hideLoading();
+                $("#loading-spinner").hide();
                 resolve(user_id);
-            }).fail(function () {
-                hideLoading();
-                alert("Failed to fetch user ID. Please refresh the page.");
-                reject("User fetch failed");
+            })
+            .fail(function(jqXHR) {
+                $("#loading-spinner").hide();
+
+                if (jqXHR.status === 401) {
+                    // User not logged in
+                    alert("You are not logged in. Please login to continue.");
+                } else {
+                    // Other errors
+                    alert("Failed to fetch user session. Please refresh the page.");
+                }
+
+                reject(jqXHR.statusText);
             });
-        }
     });
 }
-
 
 window.submitAnswers = async function () {
     try {

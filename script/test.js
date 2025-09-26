@@ -1,7 +1,7 @@
 // test.js
 $(document).ready(function () {
     // Fetch question.json
-    fetch('/BANOL6/script/question.json')
+    fetch('/BANOL6/dataset/question.json')
         .then(response => {
             if (!response.ok) throw new Error('Failed to load JSON');
             return response.json();

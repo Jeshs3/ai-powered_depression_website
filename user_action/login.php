@@ -1,38 +1,59 @@
 <?php
 session_start();
 include "../database/connection.php";
+include "../Admin/session.php"; // For admin session check
+include "../Admin/notification.php"; // Include notification functions
 
+// Track failed login attempts
+if (!isset($_SESSION['failed_attempts'])) {
+    $_SESSION['failed_attempts'] = 0;
+}
+
+// ========== LOGIN HANDLER ==========
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
+
+    // --- CHECK IF ACCOUNT LOCKED ---
+    $recentFails = countRecentFailedAttempts($dbhandle, $email);
+    if ($recentFails >= 5) {
+        notifySecurityBreach($dbhandle, "Too many failed login attempts for $email", $_SESSION['admin_id'] ?? null);
+        die("Account locked due to multiple failed attempts. Please try again after 15 minutes.");
+    }
 
     // --- DEFAULT ADMIN SETUP ---
     $defaultAdminEmail = "admin@gmail.com";
     $defaultAdminPassword = "admin123";
 
     if ($email === $defaultAdminEmail && $password === $defaultAdminPassword) {
-
-        // Check if admin already exists
-        $stmt = $dbhandle->prepare("SELECT admin_id FROM admins WHERE email = ?");
+        $stmt = $dbhandle->prepare("SELECT admin_id, username FROM admins WHERE email = ?");
         $stmt->bind_param("s", $email);
         $stmt->execute();
         $stmt->store_result();
+        $stmt->bind_result($admin_id, $username);
+        $stmt->fetch();
 
         if ($stmt->num_rows === 0) {
             // Insert default admin for the first time
             $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
-            $stmtInsert = $dbhandle->prepare("INSERT INTO admins (email, password, username) VALUES (?, ?, ?)");
             $username = "Admin";
+            $stmtInsert = $dbhandle->prepare("INSERT INTO admins (email, password, username) VALUES (?, ?, ?)");
             $stmtInsert->bind_param("sss", $email, $hashedPassword, $username);
             $stmtInsert->execute();
+            $admin_id = $stmtInsert->insert_id;
             $stmtInsert->close();
         }
         $stmt->close();
 
+        // Reset failed attempts if any
+        clearFailedAttempts($dbhandle, $email);
+
         // Log the admin in
         $_SESSION['admin'] = true;
-        $_SESSION['first_name'] = "Admin";
-        header("Location: ../Admin/home.php");
+        $_SESSION['admin_id'] = $admin_id;
+        $_SESSION['first_name'] = $username;
+
+        header("Location: ../Admin/analytics.php");
         exit();
     }
 
@@ -47,14 +68,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmtUser->fetch();
 
         if (password_verify($password, $hashed_password)) {
+            // Reset failed attempts
+            clearFailedAttempts($dbhandle, $email);
+
             $_SESSION['id'] = $id;
             $_SESSION['first_name'] = $first_name;
             header("Location: ../user/depression_test.php");
             exit();
         } else {
+            // Wrong password → log attempt
+            logFailedAttempt($dbhandle, $email);
             $error = "Invalid email or password.";
         }
     } else {
+        // No user found → still log the attempt
+        logFailedAttempt($dbhandle, $email);
         $error = "User not found.";
     }
 

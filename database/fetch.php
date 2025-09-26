@@ -1,7 +1,9 @@
 
 <?php
-include 'connection.php';
 session_start();
+include 'connection.php';
+include '../Admin/notification.php'; // Include notification functions
+
 
 header('Content-Type: application/json');
 
@@ -35,18 +37,39 @@ switch ($type) {
         }
         echo json_encode(["users_by_year" => $data]);
         break;
-    case 'high_risk':
-        $sql = "SELECT COUNT(*) AS total_high FROM user_submissions WHERE status='high'";
+    case 'high_risk': 
+        $sql = "SELECT COUNT(*) AS total_high 
+                FROM user_submissions 
+                WHERE status='high' 
+                AND DATE(created_at) = CURDATE()";
         $result = $dbhandle->query($sql);
         $row = $result->fetch_assoc();
+        $count = (int)$row['total_high'];
+
+        // === Only run notification at exactly 00:00 (12:00 AM) ===
+        $currentTime = date('H:i');
+        if ($currentTime === '00:00') {
+            notifyHighRisk($dbhandle, $adminId, $count);
+        }
+        // Send JSON response
         echo json_encode(["high_risk" => (int)$row['total_high']]);
+
         break;
+
 
     case 'low_risk':
         $sql = "SELECT COUNT(*) AS total_low FROM user_submissions WHERE status='low'";
         $result = $dbhandle->query($sql);
         $row = $result->fetch_assoc();
+        $count = (int)$row['total_low'];
+        
+        $currentTime = date('H:i');
+        if ($currentTime === '00:00') {
+            notifyLowRisk($dbhandle, $adminId, $count);
+        }
+
         echo json_encode(["low_risk" => (int)$row['total_low']]);
+
         break;
 
     case 'depression_rate':
@@ -79,8 +102,17 @@ switch ($type) {
         }
         echo json_encode($data);
     break;
+    case 'total_responses':
+        $sql = "SELECT COUNT(*) AS total_responses FROM user_submissions";
+        $result = $dbhandle->query($sql);
+        $row = $result->fetch_assoc();
+        echo json_encode(["total_responses" => (int)$row['total_responses']]);
 
-
+        $currentTime = date('H:i');
+        if ($currentTime === '00:00') {
+            notifyDailySubmissions($dbhandle, $adminId, $count);
+        }
+        break;
 
     default:
         echo json_encode(["error" => "Invalid type"]);

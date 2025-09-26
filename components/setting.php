@@ -1,28 +1,16 @@
-<?php include '../Admin/header.php'; ?>
-
-<?php
-// setting.php
-session_start();
-
-// Example: Get current admin data (replace with DB fetch)
-$admin = [
-    "name" => "Admin",
-    "email" => "admin@example.com",
-    "theme" => "light",
-    "notifications" => true,
-    "data_retention" => 12 // months
-];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Settings</title>
-    <!-- <script src="assets/js/settings.js" defer></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/darkMode.css">
 </head>
-<body class="bg-light">
+<body>
+  <?php include '../Admin/header.php'; ?>
+
   <div class="container my-5">
     <!-- Header -->
     <header class="text-center mb-5">
@@ -42,20 +30,18 @@ $admin = [
             <h2 class="h5 mb-4">
               <i class="fa-solid fa-user text-primary me-2"></i> Profile
             </h2>
-            <form method="post" action="update_profile.php" class="vstack gap-3">
+            <form id="profileForm" class="vstack gap-3">
               <div>
                 <label class="form-label">Name</label>
-                <input type="text" name="name" class="form-control" 
-                       value="<?= htmlspecialchars($admin['name']) ?>" required>
+                <input type="text" id="username" name="username" class="form-control" required>
               </div>
               <div>
                 <label class="form-label">Email</label>
-                <input type="email" name="email" class="form-control" 
-                       value="<?= htmlspecialchars($admin['email']) ?>" required>
+                <input type="email" id="email" name="email" class="form-control" required>
               </div>
               <div>
                 <label class="form-label">New Password</label>
-                <input type="password" name="password" class="form-control" placeholder="••••••••">
+                <input type="password" id="password" name="password" class="form-control" placeholder="••••••••">
                 <div class="form-text">Leave blank to keep current password</div>
               </div>
               <button type="submit" class="btn btn-primary">
@@ -74,9 +60,7 @@ $admin = [
               <i class="fa-solid fa-moon text-primary me-2"></i> Theme
             </h2>
             <p class="text-muted">Choose your preferred appearance mode</p>
-            <button class="btn btn-outline-primary" id="themeToggle">
-              <i class="fa-solid fa-sun me-2"></i> Switch to Light/Dark
-            </button>
+            <button class="btn btn-outline-primary" id="themeToggle"></button>
           </div>
         </div>
       </div>
@@ -89,8 +73,7 @@ $admin = [
               <i class="fa-solid fa-bell text-primary me-2"></i> Notifications
             </h2>
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" id="notifications"
-                     <?= $admin['notifications'] ? 'checked' : '' ?>>
+              <input class="form-check-input" type="checkbox" id="notifications">
               <label class="form-check-label" for="notifications">
                 Enable system alerts and updates
               </label>
@@ -106,13 +89,13 @@ $admin = [
             <h2 class="h5 mb-4">
               <i class="fa-solid fa-database text-primary me-2"></i> Data Retention
             </h2>
-            <form method="post" action="update_retention.php" class="vstack gap-3">
+            <form id="retentionForm" class="vstack gap-3">
               <div>
                 <label class="form-label">Keep user results for:</label>
-                <select name="data_retention" class="form-select">
-                  <option value="6" <?= $admin['data_retention']==6 ? 'selected' : '' ?>>6 months</option>
-                  <option value="12" <?= $admin['data_retention']==12 ? 'selected' : '' ?>>1 year</option>
-                  <option value="24" <?= $admin['data_retention']==24 ? 'selected' : '' ?>>2 years</option>
+                <select id="dataRetention" name="data_retention" class="form-select">
+                  <option value="6">6 months</option>
+                  <option value="12">1 year</option>
+                  <option value="24">2 years</option>
                 </select>
               </div>
               <button type="submit" class="btn btn-primary">
@@ -122,9 +105,9 @@ $admin = [
           </div>
         </div>
       </div>
-
     </div>
   </div>
-</body>
 
+  <script src="../script/setting.js"></script>
+</body>
 </html>

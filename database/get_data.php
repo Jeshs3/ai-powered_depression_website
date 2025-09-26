@@ -11,6 +11,7 @@ $sql = "SELECT
             us.status,
             us.probability,
             us.submission_date,
+            us.answers,
             CONCAT(u.first_name, ' ', COALESCE(u.middle_name, ''), ' ', u.last_name) AS username,
             TIMESTAMPDIFF(YEAR, u.dob, CURDATE()) AS age,
             u.gender AS gender
@@ -24,6 +25,11 @@ $submissions = [];
 
 if ($result && $result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
+        $answers = [];
+        if (!empty($row["answers"])) {
+            $decoded = json_decode($row["answers"], true);
+            $answers = is_array($decoded) ? $decoded : [];
+        }
         $submissions[] = [
             "submission_id" => (int)$row["submission_id"],
             "userid"        => (int)$row["user_id"],
@@ -33,7 +39,8 @@ if ($result && $result->num_rows > 0) {
             "total"         => (float)$row["score"],
             "status"        => $row["status"],
             "probability"   => (float)$row["probability"],
-            "date"          => $row["submission_date"]
+            "date"          => $row["submission_date"],
+            "answers"       => $answers
         ];
     }
 }
