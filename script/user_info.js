@@ -36,7 +36,13 @@ function redirectToLogin() {
 }
 
 function logout() {
-    // Perform logout - redirect to logout script
-    window.location.href = '../user_action/login.php';
+    fetch('../user_action/logout.php', { method: 'POST' })
+        .then(() => window.location.href = '../user_action/login.php');
 }
+
+// function logout() {
+//     // Perform logout - redirect to logout script
+//     window.location.href = '../user_action/logout.php';
+// }
+
 

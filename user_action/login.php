@@ -53,6 +53,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['admin_id'] = $admin_id;
         $_SESSION['first_name'] = $username;
 
+         // Log admin login time
+        $stmtLog = $dbhandle->prepare("INSERT INTO user_log (username) VALUES (?)");
+        $stmtLog->bind_param("s", $username);
+        $stmtLog->execute();
+        $_SESSION['log_id'] = $dbhandle->insert_id; // store log id for logout
+        $stmtLog->close();
+
         header("Location: ../Admin/analytics.php");
         exit();
     }
@@ -70,6 +77,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $hashed_password)) {
             // Reset failed attempts
             clearFailedAttempts($dbhandle, $email);
+
+            // Log successful login
+            $stmtLog = $dbhandle->prepare("INSERT INTO user_log (username) VALUES (?)");
+            $stmtLog->bind_param("s", $first_name);
+            $stmtLog->execute();
+            $_SESSION['log_id'] = $dbhandle->insert_id; // store log id for logout
+            $stmtLog->close();
 
             $_SESSION['id'] = $id;
             $_SESSION['first_name'] = $first_name;
