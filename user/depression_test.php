@@ -172,7 +172,7 @@
       </div>
       <div class="detail-row">
         <span class="detail-label">Tests taken:</span>
-        <span><?php echo $user_data['tests_taken']; ?></span>
+        <span>Upcoming feature</span>
       </div>
     </div>
     
